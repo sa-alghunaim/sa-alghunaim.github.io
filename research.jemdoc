@@ -1,14 +1,21 @@
 # jemdoc: menu{MENU}{research.html}, nofooter
+=Research 
 
-== Research Interests
-I am interested in optimization and its applications in the areas of adaptation and learning theories, 
-multi-agent networks, control, and signal processing. My current focus is on the design and analysis of distributed optimization and learning algorithms.
+
+
+== Research Interests 
+I am interested in optimization and learning theory and their applications in the areas of 
+multi-agent systems, control, and signal processing. My current focus is on the design and analysis of distributed (multi-agent) optimization and learning algorithms.
+
+
 
 
 == Publications 
 See [https://scholar.google.com/citations?hl=en&user=dw4z1jwAAAAJ&view_op=list_works&sortby=pubdate Google scholar profile]
 
-== Ph.D. Thesis
+
+
+== Ph.D. Thesis 
 :{[https://escholarship.org/uc/item/1p19x685 On the Performance and Linear Convergence of Decentralized Primal-Dual Methods]} S. A. Alghunaim
 
 
