@@ -1,6 +1,9 @@
 # jemdoc: menu{MENU}{teaching.html}, nofooter
 = Teaching
 
+Here is a list of courses that I taught or still teaching at Kuwait University:
 
-== Courses
-(TBA)
+- Electrical Engineering Fundamentals (ENGR 0600-205) 
+- Signals and Systems (EE 0610-312)
+- Optimization Techniques (EE 0610-477)
+- Mathematical Optimization (ENGR 0600-507, Graduate course)
