@@ -127,12 +127,12 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 155%;
+	font-size: 160%;
 }
 
 h2 {
 	padding-top: 0.8em;
-	font-size: 115%;
+	font-size: 120%;
 }
 
 h2 + h3 {
@@ -140,7 +140,7 @@ h2 + h3 {
 }
 
 h3 {
-	font-size: 100%;
+	font-size: 105%;
 	border-bottom: none;
 }
 
