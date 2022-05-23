@@ -8,7 +8,7 @@ table#tlayout {
 
 body {
 	background: white;
-	font-family: Georgia, serif;
+	font-family: arial,sans-serif;
 	padding-bottom: 8px;
 	margin: 0;
 }
@@ -17,9 +17,9 @@ body {
 	background: #d0d0d0;
 	border: 1px solid #b7b7b7;
 	padding-top: 0.5em;
-	padding-left: 8px;
-	padding-right: 2px;
-	font-size: 1.0em;
+	padding-left: 7.5px;
+	padding-right: 3px;
+	font-size: 0.9em;
 	width: auto;
 	white-space: nowrap;
     text-align: left;
@@ -43,7 +43,7 @@ body {
 
 #layout-menu a {
 	line-height: 1.5em;
-	margin-left: 0.3em;
+	margin-left: 0.2em;
 }
 
 tt {
@@ -65,7 +65,7 @@ a:hover {
 }
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
-	color: #0000b3;
+	color: #1906A7;
 	border-bottom: 1px gray solid;
 }
 #layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
@@ -127,12 +127,12 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 165%;
+	font-size: 155%;
 }
 
 h2 {
 	padding-top: 0.8em;
-	font-size: 125%;
+	font-size: 115%;
 }
 
 h2 + h3 {
@@ -140,7 +140,7 @@ h2 + h3 {
 }
 
 h3 {
-	font-size: 110%;
+	font-size: 100%;
 	border-bottom: none;
 }
 
