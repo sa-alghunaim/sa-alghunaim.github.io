@@ -56,7 +56,7 @@ pre, tt {
 }
 
 a, a > tt {
-	color: #0000cc;
+	color: #0e00cc;
 	text-decoration: none;
 }
 
@@ -65,11 +65,11 @@ a:hover {
 }
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
-	color: #1906A7;
+	color: #0e00cc;
 	border-bottom: 1px gray solid;
 }
 #layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
-	color: #0000cc;
+	color: #0e00cc;
 	text-decoration: none;
 }
 #layout-menu a:hover {
@@ -92,7 +92,7 @@ div.menu-item {
 div#toptitle {
 	padding-bottom: 0.2em;
 	margin-bottom: 1.5em;
-	border-bottom: 3px double gray;
+	border-bottom: 2px solid gray;
 }
 
 /* Reduce space if we begin the page with a title. */
@@ -117,7 +117,7 @@ strong {
 
 
 h1, h2, h3 {
-	color: #1e60ab;
+	color: #0047AB;
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
 	padding-bottom: 0.2em;
