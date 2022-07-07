@@ -10,17 +10,17 @@
 
 == Journals
 
-- *S. A. Alghunaim* and K. Yuan, ``A unified and refined convergence analysis for non-convex decentralized learning,'' to appear in /IEEE Trans. on Signal Processing/, 2022. 
+- *S. A. Alghunaim* and K. Yuan, ``A unified and refined convergence analysis for non-convex decentralized learning,'' /IEEE Trans. on Signal Processing/, vol. 70, pp. 3264--3279, June 2022. 
 [https://ieeexplore.ieee.org/document/9802673 \[link\]] [https://arxiv.org/abs/2110.09993 \[arXiv\]]
 
-- *S. A. Alghunaim*, Q. Lyu, M. Yan, and A. H. Sayed, ``Dual consensus proximal algorithm for multi-agent sharing problems'' /IEEE Trans. on Signal Processing/, vol. 69, pp. 5568-5579, September 2021. 
+- *S. A. Alghunaim*, Q. Lyu, M. Yan, and A. H. Sayed, ``Dual consensus proximal algorithm for multi-agent sharing problems,'' /IEEE Trans. on Signal Processing/, vol. 69, pp. 5568-5579, September 2021. 
 [https://ieeexplore.ieee.org/abstract/document/9547761 \[link\]]
 
 - *S. A. Alghunaim*, Ernest K. Ryu, K. Yuan, and A. H. Sayed, ``Decentralized proximal gradient algorithms with linear convergence rates,''  /IEEE Trans. Automatic Control/, vol. 66, no. 6, pp.  2787-2794, June 2021. 
 [https://ieeexplore.ieee.org/abstract/document/9141196 \[link\]] [https://arxiv.org/abs/1909.06479 \[arXiv\]]
 
 
-- *S. A. Alghunaim*, K. Yuan, and A. H. Sayed, ``A proximal diffusion strategy for multi-agent optimization with sparse affine constraints''  /IEEE Trans. Automatic Control/, vol. 65, no. 11, pp. 4554-4567, November 2020. 
+- *S. A. Alghunaim*, K. Yuan, and A. H. Sayed, ``A proximal diffusion strategy for multi-agent optimization with sparse affine constraints,''  /IEEE Trans. Automatic Control/, vol. 65, no. 11, pp. 4554-4567, November 2020. 
 [https://ieeexplore.ieee.org/abstract/document/8935381 \[link\]] [https://arxiv.org/abs/1810.02124 \[arXiv\]]
 
 -  K. Yuan, *S. A. Alghunaim*, B. Ying, and A. H. Sayed. ``On the influence of bias-correction on distributed stochastic optimization,'' /IEEE Trans. on Signal Processing/, vol. 68,  4352-4367, July 2020. 
