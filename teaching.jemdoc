@@ -1,14 +1,14 @@
 # jemdoc: menu{MENU}{teaching.html}, nofooter
 = Teaching
 
-Here is a list of courses that I taught or still teaching at Kuwait University:
+The following is a list of courses that I taught or still teaching at Kuwait University.
 
 
 
-- ENGR205: /Electrical Engineering Fundamentals/. 
+- ENGR205: /Electrical Engineering Fundamentals/. #[./courses/engr205.html ENGR205: /Electrical Engineering Fundamentals/.] 
 
 - EE312: /Signals and Systems/.
 
 - EE477: /Optimization Techniques/.
 
-- ENGR507: /Mathematical Optimization/ (Graduate course).
+- ENGR507: /Mathematical Optimization/. (Graduate course)
