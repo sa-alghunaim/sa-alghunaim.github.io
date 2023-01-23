@@ -1,17 +1,28 @@
 # jemdoc: menu{MENU}{teaching.html}, nofooter
 = Teaching
 
-The following is a list of courses that I taught or still teaching at Kuwait University.
+The EE department courses offered are listed [http://kuweb.ku.edu.kw/COEP/EngineeringPrograms/ElecEng/CourseCatalog/index.htm here].
+Information about graduate courses can be found [http://kuweb.ku.edu.kw/COGS/AcademicAffairs/Preparationandpublicationdepartment/Graduateguide/index.htm here].
 
+== Current Teaching
+
+(Sabbatical leave 2022/2023)
+
+== Previous Teaching
 
 
 - ENGR205: /Electrical Engineering Fundamentals/. #[./courses/engr205.html ENGR205: /Electrical Engineering Fundamentals/.] 
+(Fall 2020\/2021, Spring 2020\/2021, Spring 2021\/2022)
 
 - EE312: /Signals and Systems/.
+(Fall 2021\/2022, Spring 2021\/2022, Summer 2022)
 
 - EE477: /Optimization Techniques/.
+(Fall 2020\/2021, Fall 2021\/2022)
 
-- ENGR507: /Mathematical Optimization/. ([http://kuweb.ku.edu.kw/COGS/AcademicAffairs/Preparationandpublicationdepartment/Graduateguide/index.htm Graduate course])
 
 
-The EE department courses offered are listed [http://kuweb.ku.edu.kw/COEP/EngineeringPrograms/ElecEng/CourseCatalog/index.htm here].
+==== Graduate courses
+
+- ENGR507: /Mathematical Optimization/. 
+(Spring 2020\/2021, Spring 2021\/2022))

@@ -5,6 +5,10 @@
 
 == Preprints
 
+#- *S. A. Alghunaim*, ``[Local exact-diffusion for decentralized optimization and learning],'' , Jan., 2023. 
+
+- *S. A. Alghunaim* and K. Yuan, ``[https://arxiv.org/abs/2301.02855 An enhanced gradient-tracking bound for distributed online stochastic convex optimization],'' arXiv:2301.02855, Jan., 2023. 
+
 - Edward D. H. Nguyen, *S. A. Alghunaim*, Kun Yuan, and César A. Uribe, ``[https://arxiv.org/abs/2210.04757 On the performance of gradient tracking with local updates],'' arXiv:2210.04757, Oct., 2022. 
 
 - K. Yuan, *S. A. Alghunaim*, and Xinmeng Huang, ``[https://arxiv.org/abs/2105.08023 Removing data heterogeneity influence enhances network topology dependence of decentralized SGD],'' arXiv:2105.08023, May, 2021. 
