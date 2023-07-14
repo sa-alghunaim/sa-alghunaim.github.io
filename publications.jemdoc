@@ -9,8 +9,6 @@
 
 - *S. A. Alghunaim* and K. Yuan, ``[https://arxiv.org/abs/2301.02855 An enhanced gradient-tracking bound for distributed online stochastic convex optimization],'' arXiv:2301.02855, Jan., 2023. 
 
-- Edward D. H. Nguyen, *S. A. Alghunaim*, Kun Yuan, and César A. Uribe, ``[https://arxiv.org/abs/2210.04757 On the performance of gradient tracking with local updates],'' arXiv:2210.04757, Oct., 2022. 
-
 - K. Yuan, *S. A. Alghunaim*, and Xinmeng Huang, ``[https://arxiv.org/abs/2105.08023 Removing data heterogeneity influence enhances network topology dependence of decentralized SGD],'' arXiv:2105.08023, May, 2021. 
 
 == Journals
@@ -47,18 +45,21 @@
 
 == Conferences
 
+- Hao Yuan, *S. A. Alghunaim*, and Kun Yuan, ``[ Achieving Linear Speedup with Network-Independent Learning Rates in Decentralized Stochastic Optimization],'' /Proc. IEEE CDC/, Marina Bay Sands, Singapore, December 2023.
+
+- Edward D. H. Nguyen, *S. A. Alghunaim*, Kun Yuan, and César A. Uribe, ``[ On the performance of gradient tracking with local updates],'' /Proc. IEEE CDC/, Marina Bay Sands, Singapore, December 2023.  [https://arxiv.org/abs/2210.04757 \[arXiv\]]
+
+
 - *S. A. Alghunaim*, M. Yan, and A. H. Sayed,  ``[https://ieeexplore.ieee.org/abstract/document/9287370 A multi-agent primal-dual strategy for composite optimization over distributed features],''  in /Proc. EUSIPCO 2020/, pp. 2095-2099, Amsterdam, The Netherlands, January 2021. 
  [https://arxiv.org/abs/2006.08722 \[arXiv\]]
 
 
-
-
-- *S. A. Alghunaim*, K. Yuan, and A. H. Sayed, ``[https://proceedings.neurips.cc/paper/2019/hash/e9fd7c2c6623306db59b6aef5c0d5cac-Abstract.html A linearly convergent proximal gradient algorithm for decentralized  optimization],'' in /Advances on Neural Information Processing Systems/ (NeurIPS), Vancouver, Canada, December 2019. 
+- *S. A. Alghunaim*, K. Yuan, and A. H. Sayed, ``[https://proceedings.neurips.cc/paper/2019/hash/e9fd7c2c6623306db59b6aef5c0d5cac-Abstract.html A linearly convergent proximal gradient algorithm for decentralized  optimization],'' in /Advances on Neural Information Processing Systems/ (NeurIPS),  volume 32, Vancouver, Canada, December 2019. 
  [https://arxiv.org/abs/1905.07996 \[arXiv\]]
 
-- K. Yuan, *S. A. Alghunaim*, B. Ying, and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/9029537 On the performance of exact diffusion over adaptive networks],'' /Proc. IEEE CDC/, Nice, France, December 2019. 
+- K. Yuan, *S. A. Alghunaim*, B. Ying, and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/9029537 On the performance of exact diffusion over adaptive networks],'' /Proc. IEEE CDC/,  pp. 4898-4903, Nice, France, December 2019. 
 
-- L. Cassano, *S. A. Alghunaim*, and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/8683168 Team policy learning for multi-agent reinforcement learning],'' /Proc. IEEE ICASSP/, Brighton, UK, May 2019. 
+- L. Cassano, *S. A. Alghunaim*, and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/8683168 Team policy learning for multi-agent reinforcement learning],'' /Proc. IEEE ICASSP/, pp. 3062-3066,  Brighton, UK, May 2019. 
 
 
 - *S. A. Alghunaim*, K. Yuan, and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/8619343 Dual coupled diffusion for distributed optimization with affine constraints],'' /Proc. IEEE CDC/, pp. 829-834,  Miami Beach, FL, USA, December 2018. 
