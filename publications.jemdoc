@@ -5,72 +5,81 @@
 
 == Preprints
 
-- *S. A. Alghunaim*, ``[https://arxiv.org/abs/2302.00620 Local exact-diffusion for decentralized optimization and learning],'' arXiv:2302.00620, Feb., 2023. 
+-  *S. A. Alghunaim*, ``[https://arxiv.org/abs/2302.00620 Local exact-diffusion for decentralized optimization and learning],'' arXiv:2302.00620, Feb., 2023. 
 
-- *S. A. Alghunaim* and K. Yuan, ``[https://arxiv.org/abs/2301.02855 An enhanced gradient-tracking bound for distributed online stochastic convex optimization],'' arXiv:2301.02855, Jan., 2023. 
+-  *S. A. Alghunaim* and K. Yuan, ``[https://arxiv.org/abs/2301.02855 An enhanced gradient-tracking bound for distributed online stochastic convex optimization],'' arXiv:2301.02855, Jan., 2023. 
 
-- K. Yuan, *S. A. Alghunaim*, and Xinmeng Huang, ``[https://arxiv.org/abs/2105.08023 Removing data heterogeneity influence enhances network topology dependence of decentralized SGD],'' arXiv:2105.08023, May, 2021. 
 
-== Journals
+== Journals and Conferences
 
-- *S. A. Alghunaim* and K. Yuan, ``[https://ieeexplore.ieee.org/document/9802673 A unified and refined convergence analysis for non-convex decentralized learning],'' /IEEE Trans. on Signal Processing/, vol. 70, pp. 3264--3279, June 2022. 
+- \[*J*\] K. Yuan, *S. A. Alghunaim*, and Xinmeng Huang, ``[ Removing data heterogeneity influence enhances network topology dependence of decentralized SGD],'' To appear in /Journal of Machine Learning Research/ (JMLR), 2023.   [https://arxiv.org/abs/2105.08023 \[arXiv\]]
+
+
+- \[*C*\] Hao Yuan, *S. A. Alghunaim*, and Kun Yuan, ``[ Achieving linear speedup with network-independent learning rates in decentralized stochastic optimization],'' /Proc. IEEE CDC/, Marina Bay Sands, Singapore, December 2023.
+
+- \[*C*\] Edward D. H. Nguyen, *S. A. Alghunaim*, Kun Yuan, and César A. Uribe, ``[ On the performance of gradient tracking with local updates],'' /Proc. IEEE CDC/, Marina Bay Sands, Singapore, December 2023.  [https://arxiv.org/abs/2210.04757 \[arXiv\]]
+
+
+
+- \[*J*\] *S. A. Alghunaim* and K. Yuan, ``[https://ieeexplore.ieee.org/document/9802673 A unified and refined convergence analysis for non-convex decentralized learning],'' /IEEE Trans. on Signal Processing/, vol. 70, pp. 3264--3279, June 2022. 
   [https://arxiv.org/abs/2110.09993 \[arXiv\]]
 
-- *S. A. Alghunaim*, Q. Lyu, M. Yan, and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/9547761 Dual consensus proximal algorithm for multi-agent sharing problems],'' /IEEE Trans. on Signal Processing/, vol. 69, pp. 5568-5579, September 2021. 
+
+- \[*J*\] *S. A. Alghunaim*, Q. Lyu, M. Yan, and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/9547761 Dual consensus proximal algorithm for multi-agent sharing problems],'' /IEEE Trans. on Signal Processing/, vol. 69, pp. 5568-5579, September 2021. 
 
 
-- *S. A. Alghunaim*, Ernest K. Ryu, K. Yuan, and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/9141196 Decentralized proximal gradient algorithms with linear convergence rates],''  /IEEE Trans. Automatic Control/, vol. 66, no. 6, pp.  2787-2794, June 2021. 
+
+- \[*J*\] *S. A. Alghunaim*, Ernest K. Ryu, K. Yuan, and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/9141196 Decentralized proximal gradient algorithms with linear convergence rates],''  /IEEE Trans. Automatic Control/, vol. 66, no. 6, pp.  2787-2794, June 2021. 
  [https://arxiv.org/abs/1909.06479 \[arXiv\]]
 
 
-- *S. A. Alghunaim*, K. Yuan, and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/8935381 A proximal diffusion strategy for multi-agent optimization with sparse affine constraints],''  /IEEE Trans. Automatic Control/, vol. 65, no. 11, pp. 4554-4567, November 2020. 
+
+
+- \[*C*\] *S. A. Alghunaim*, M. Yan, and A. H. Sayed,  ``[https://ieeexplore.ieee.org/abstract/document/9287370 A multi-agent primal-dual strategy for composite optimization over distributed features],''  in /Proc. EUSIPCO 2020/, pp. 2095-2099, Amsterdam, The Netherlands, January 2021. 
+ [https://arxiv.org/abs/2006.08722 \[arXiv\]]
+
+
+
+- \[*J*\] *S. A. Alghunaim*, K. Yuan, and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/8935381 A proximal diffusion strategy for multi-agent optimization with sparse affine constraints],''  /IEEE Trans. Automatic Control/, vol. 65, no. 11, pp. 4554-4567, November 2020. 
  [https://arxiv.org/abs/1810.02124 \[arXiv\]]
 
--  K. Yuan, *S. A. Alghunaim*, B. Ying, and A. H. Sayed. ``[https://ieeexplore.ieee.org/abstract/document/9139399  On the influence of bias-correction on distributed stochastic optimization],'' /IEEE Trans. on Signal Processing/, vol. 68,  4352-4367, July 2020. 
- [https://arxiv.org/abs/1903.10956 \[arXiv\]]
+
+-  \[*J*\] K. Yuan, *S. A. Alghunaim*, B. Ying, and A. H. Sayed. ``[https://ieeexplore.ieee.org/abstract/document/9139399  On the influence of bias-correction on distributed stochastic optimization],'' /IEEE Trans. on Signal Processing/, vol. 68,  4352-4367, July 2020.  [https://arxiv.org/abs/1903.10956 \[arXiv\]]
 
 
-
-
-- *S. A. Alghunaim* and A. H. Sayed, ``[https://www.sciencedirect.com/science/article/abs/pii/S0005109820302016 Linear convergence of primal-dual gradient methods and their performance in distributed optimization],'' /Automatica/, Volume 117, July 2020. 
+- \[*J*\] *S. A. Alghunaim* and A. H. Sayed, ``[https://www.sciencedirect.com/science/article/abs/pii/S0005109820302016 Linear convergence of primal-dual gradient methods and their performance in distributed optimization],'' /Automatica/, Volume 117, July 2020. 
  [https://arxiv.org/abs/1904.01196 \[arXiv\]]
 
 
 
 
-- *S. A. Alghunaim* and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/8675446/ Distributed coupled multi-agent stochastic optimization]," /IEEE Trans. Automatic Control/, vol. 65, no. 1, pp. 175-190, January,  2020. 
+- \[*J*\] *S. A. Alghunaim* and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/8675446/ Distributed coupled multi-agent stochastic optimization]," /IEEE Trans. Automatic Control/, vol. 65, no. 1, pp. 175-190, January,  2020. 
  [https://arxiv.org/abs/1712.08817 \[arXiv\]]
 
 
 
-== Conferences
-
-- Hao Yuan, *S. A. Alghunaim*, and Kun Yuan, ``[ Achieving linear speedup with network-independent learning rates in decentralized stochastic optimization],'' /Proc. IEEE CDC/, Marina Bay Sands, Singapore, December 2023.
-
-- Edward D. H. Nguyen, *S. A. Alghunaim*, Kun Yuan, and César A. Uribe, ``[ On the performance of gradient tracking with local updates],'' /Proc. IEEE CDC/, Marina Bay Sands, Singapore, December 2023.  [https://arxiv.org/abs/2210.04757 \[arXiv\]]
-
-
-- *S. A. Alghunaim*, M. Yan, and A. H. Sayed,  ``[https://ieeexplore.ieee.org/abstract/document/9287370 A multi-agent primal-dual strategy for composite optimization over distributed features],''  in /Proc. EUSIPCO 2020/, pp. 2095-2099, Amsterdam, The Netherlands, January 2021. 
- [https://arxiv.org/abs/2006.08722 \[arXiv\]]
-
-
-- *S. A. Alghunaim*, K. Yuan, and A. H. Sayed, ``[https://proceedings.neurips.cc/paper/2019/hash/e9fd7c2c6623306db59b6aef5c0d5cac-Abstract.html A linearly convergent proximal gradient algorithm for decentralized  optimization],'' in /Advances on Neural Information Processing Systems/ (NeurIPS),  volume 32, Vancouver, Canada, December 2019. 
+- \[*C*\] *S. A. Alghunaim*, K. Yuan, and A. H. Sayed, ``[https://proceedings.neurips.cc/paper/2019/hash/e9fd7c2c6623306db59b6aef5c0d5cac-Abstract.html A linearly convergent proximal gradient algorithm for decentralized  optimization],'' in /Advances on Neural Information Processing Systems/ (NeurIPS),  volume 32, Vancouver, Canada, December 2019. 
  [https://arxiv.org/abs/1905.07996 \[arXiv\]]
 
-- K. Yuan, *S. A. Alghunaim*, B. Ying, and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/9029537 On the performance of exact diffusion over adaptive networks],'' /Proc. IEEE CDC/,  pp. 4898-4903, Nice, France, December 2019. 
-
-- L. Cassano, *S. A. Alghunaim*, and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/8683168 Team policy learning for multi-agent reinforcement learning],'' /Proc. IEEE ICASSP/, pp. 3062-3066,  Brighton, UK, May 2019. 
 
 
-- *S. A. Alghunaim*, K. Yuan, and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/8619343 Dual coupled diffusion for distributed optimization with affine constraints],'' /Proc. IEEE CDC/, pp. 829-834,  Miami Beach, FL, USA, December 2018. 
-
-- *S. A. Alghunaim* and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/8461391 Distributed coupled learning over adaptive networks],'' /Proc. IEEE ICASSP/, pp. 6353-6357, Calgary, Canada, April 2018. 
+- \[*C*\] K. Yuan, *S. A. Alghunaim*, B. Ying, and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/9029537 On the performance of exact diffusion over adaptive networks],'' /Proc. IEEE CDC/,  pp. 4898-4903, Nice, France, December 2019. 
 
 
-- *S. A. Alghunaim*, K. Yuan, and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/8262757 Decentralized exact coupled optimization],'' /Proc. Allerton Conference on Communication, Control, and Computing/, pp. 338-345, Allerton, IL, October 2017.
+
+- \[*C*\] L. Cassano, *S. A. Alghunaim*, and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/8683168 Team policy learning for multi-agent reinforcement learning],'' /Proc. IEEE ICASSP/, pp. 3062-3066,  Brighton, UK, May 2019. 
 
 
-- J. Y. Ishihara, *S. A. Alghunaim*,  ``[https://ieeexplore.ieee.org/abstract/document/7963762 Diffusion LMS filter for distributed estimation of systems with stochastic state transition and observation matrices],'' /Proc. American Control Conference (ACC)/, pp. 5199-5204, Seattle, USA, May, 2017.
+- \[*C*\] *S. A. Alghunaim*, K. Yuan, and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/8619343 Dual coupled diffusion for distributed optimization with affine constraints],'' /Proc. IEEE CDC/, pp. 829-834,  Miami Beach, FL, USA, December 2018. 
+
+
+- \[*C*\] *S. A. Alghunaim* and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/8461391 Distributed coupled learning over adaptive networks],'' /Proc. IEEE ICASSP/, pp. 6353-6357, Calgary, Canada, April 2018. 
+
+
+- \[*C*\] *S. A. Alghunaim*, K. Yuan, and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/8262757 Decentralized exact coupled optimization],'' /Proc. Allerton Conference on Communication, Control, and Computing/, pp. 338-345, Allerton, IL, October 2017.
+
+
+- \[*C*\] J. Y. Ishihara, *S. A. Alghunaim*,  ``[https://ieeexplore.ieee.org/abstract/document/7963762 Diffusion LMS filter for distributed estimation of systems with stochastic state transition and observation matrices],'' /Proc. American Control Conference (ACC)/, pp. 5199-5204, Seattle, USA, May, 2017.
 
 
 == Ph.D. Thesis 
