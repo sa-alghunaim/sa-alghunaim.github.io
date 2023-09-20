@@ -12,12 +12,12 @@
 
 == Journals and Conferences
 
-- \[*J*\] K. Yuan, *S. A. Alghunaim*, and Xinmeng Huang, ``[ Removing data heterogeneity influence enhances network topology dependence of decentralized SGD],'' To appear in /Journal of Machine Learning Research/ (JMLR), 2023.   [https://arxiv.org/abs/2105.08023 \[arXiv\]]
+- \[*J*\] K. Yuan, *S. A. Alghunaim*, and X. Huang, ``[ Removing data heterogeneity influence enhances network topology dependence of decentralized SGD],'' To appear in /Journal of Machine Learning Research/ (JMLR), 2023.   [https://arxiv.org/abs/2105.08023 \[arXiv\]]
 
 
-- \[*C*\] Hao Yuan, *S. A. Alghunaim*, and Kun Yuan, ``[ Achieving linear speedup with network-independent learning rates in decentralized stochastic optimization],'' /Proc. IEEE CDC/, Marina Bay Sands, Singapore, December 2023.
+- \[*C*\] H. Yuan, *S. A. Alghunaim*, and K. Yuan, ``[ Achieving linear speedup with network-independent learning rates in decentralized stochastic optimization],'' /Proc. IEEE CDC/, Marina Bay Sands, Singapore, December 2023.
 
-- \[*C*\] Edward D. H. Nguyen, *S. A. Alghunaim*, Kun Yuan, and César A. Uribe, ``[ On the performance of gradient tracking with local updates],'' /Proc. IEEE CDC/, Marina Bay Sands, Singapore, December 2023.  [https://arxiv.org/abs/2210.04757 \[arXiv\]]
+- \[*C*\] E. D. H. Nguyen, *S. A. Alghunaim*, K. Yuan, and C. A. Uribe, ``[ On the performance of gradient tracking with local updates],'' /Proc. IEEE CDC/, Marina Bay Sands, Singapore, December 2023.  [https://arxiv.org/abs/2210.04757 \[arXiv\]]
 
 
 
@@ -29,7 +29,7 @@
 
 
 
-- \[*J*\] *S. A. Alghunaim*, Ernest K. Ryu, K. Yuan, and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/9141196 Decentralized proximal gradient algorithms with linear convergence rates],''  /IEEE Trans. Automatic Control/, vol. 66, no. 6, pp.  2787-2794, June 2021. 
+- \[*J*\] *S. A. Alghunaim*, E. K. Ryu, K. Yuan, and A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/9141196 Decentralized proximal gradient algorithms with linear convergence rates],''  /IEEE Trans. Automatic Control/, vol. 66, no. 6, pp.  2787-2794, June 2021. 
  [https://arxiv.org/abs/1909.06479 \[arXiv\]]
 
 
