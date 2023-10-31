@@ -2,30 +2,30 @@
 = Teaching
 
 The EE department courses offered are listed [http://kuweb.ku.edu.kw/COEP/EngineeringPrograms/ElecEng/CourseCatalog/index.htm here].
-Information about graduate courses can be found [http://kuweb.ku.edu.kw/COGS/AcademicAffairs/Preparationandpublicationdepartment/Graduateguide/index.htm here].
+Information about graduate courses can be found [https://kuweb.ku.edu.kw/COGS/AcademicAffairs/Preparationandpublicationdepartment/Graduateguide/index.htm here].
 
 == Current Teaching (Fall 2023/2024)
 
-- EE312: /Signals and Systems/. #[./courses/ee312.html EE312: /Signals and Systems/.] 
+- [./courses/ee312/ee312.html EE312: /Signals and Systems/.] 
 
-- ENGR507: /Mathematical Optimization/. 
+- [./courses/engr507/engr507.html ENGR507: /Mathematical Optimization/.] 
 
 
 == Previous Teaching
 
 
 - ENGR205: /Electrical Engineering Fundamentals/. 
-(last taught: Spring 2021\/2022)
+(last taught: Spring 2021/2022)
 
-- EE312: /Signals and Systems/.
-(last taught: Summer 2022)
+- [./courses/ee312/ee312.html EE312: /Signals and Systems/.]
+(last taught: Fall 2023/2024)
 
 - EE477: /Optimization Techniques/.
-(last taught: Fall 2021\/2022)
+(last taught: Fall 2021/2022)
 
 
 
 ==== Graduate courses
 
-- ENGR507: /Mathematical Optimization/. 
-(last taught: Spring 2021\/2022))
+- [./courses/engr507/engr507.html ENGR507: /Mathematical Optimization/.] 
+(last taught: Fall 2023/2024))  
