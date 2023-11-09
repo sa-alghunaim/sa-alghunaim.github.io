@@ -1,6 +1,14 @@
 # jemdoc: menu{MENU}{index.html}, nofooter
 = Sulaiman A. Alghunaim
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5E61H1GCMT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-5E61H1GCMT');
+</script>
 ~~~
 {}{img_left}{sulaiman.JPG}{Sulaiman Alghunaim}{160}{160}
 Sulaiman A. Alghunaim \n
