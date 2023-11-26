@@ -8,10 +8,10 @@
 
 -  *S. A. Alghunaim*, ``[https://arxiv.org/abs/2302.00620 Local exact-diffusion for decentralized optimization and learning],'' arXiv:2302.00620, Feb., 2023. 
 
--  *S. A. Alghunaim* and K. Yuan, ``[https://arxiv.org/abs/2301.02855 An enhanced gradient-tracking bound for distributed online stochastic convex optimization],'' arXiv:2301.02855, Jan., 2023. 
-
 
 == Journals and Conferences
+
+-  \[*J*\] *S. A. Alghunaim* and K. Yuan, ``[https://arxiv.org/abs/2301.02855 An enhanced gradient-tracking bound for distributed online stochastic convex optimization],'' /Signal Processing/ (to appear), 2023. [https://arxiv.org/abs/2301.02855 \[arXiv\]]
 
 - \[*J*\] K. Yuan, *S. A. Alghunaim*, and X. Huang, ``[https://jmlr.org/papers/v24/22-0283.html Removing data heterogeneity influence enhances network topology dependence of decentralized SGD],'' /Journal of Machine Learning Research/ (JMLR), vol. 24, no. 280, pp. 1--53, 2023.   [https://arxiv.org/abs/2105.08023 \[arXiv\]]
 
