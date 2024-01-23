@@ -17,9 +17,9 @@
 - \[*J*\] K. Yuan, *S. A. Alghunaim*, and X. Huang, ``[https://jmlr.org/papers/v24/22-0283.html Removing data heterogeneity influence enhances network topology dependence of decentralized SGD],'' /Journal of Machine Learning Research/ (JMLR), vol. 24, no. 280, pp. 1--53, 2023.   [https://arxiv.org/abs/2105.08023 \[arXiv\]]
 
 
-- \[*C*\] H. Yuan, *S. A. Alghunaim*, and K. Yuan, ``[ Achieving linear speedup with network-independent learning rates in decentralized stochastic optimization],'' /Proc. IEEE CDC/, Marina Bay Sands, Singapore, December 2023.
+- \[*C*\] H. Yuan, *S. A. Alghunaim*, and K. Yuan, ``[https://ieeexplore.ieee.org/abstract/document/10384058 Achieving linear speedup with network-independent learning rates in decentralized stochastic optimization],'' /Proc. IEEE CDC/, pp. 139-144, Marina Bay Sands, Singapore, December 2023.
 
-- \[*C*\] E. D. H. Nguyen, *S. A. Alghunaim*, K. Yuan, and C. A. Uribe, ``[ On the performance of gradient tracking with local updates],'' /Proc. IEEE CDC/, Marina Bay Sands, Singapore, December 2023.  [https://arxiv.org/abs/2210.04757 \[arXiv\]]
+- \[*C*\] E. D. H. Nguyen, *S. A. Alghunaim*, K. Yuan, and C. A. Uribe, ``[https://ieeexplore.ieee.org/abstract/document/10383873 On the performance of gradient tracking with local updates],'' /Proc. IEEE CDC/, pp. 4309-4313, Marina Bay Sands, Singapore, December 2023.  [https://arxiv.org/abs/2210.04757 \[arXiv\]]
 
 
 
