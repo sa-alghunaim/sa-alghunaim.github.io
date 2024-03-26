@@ -7,11 +7,12 @@
 -  H. Cai, *S. A. Alghunaim*, A. H. Sayed, ``[https://arxiv.org/abs/2401.14585 Diffusion stochastic optimization for min-max problems],'' arXiv:2401.14585, Jan., 2024. 
 
 -  L. Guo, *S. A. Alghunaim*, K. Yuan, L. Condat, J. Cao, ``[https://arxiv.org/abs/2310.07983 RandCom: Random communication skipping method for decentralized stochastic optimization],'' arXiv:2310.07983, Oct., 2023. 
-
--  *S. A. Alghunaim*, ``[https://arxiv.org/abs/2302.00620 Local exact-diffusion for decentralized optimization and learning],'' arXiv:2302.00620, Feb., 2023. 
+ 
 
 
 == Journals and Conferences
+-  *S. A. Alghunaim*, ``[ Local exact-diffusion for decentralized optimization and learning],'' /IEEE Trans. Automatic Control/ (to appear), 2024. [https://arxiv.org/abs/2302.00620 \[arXiv\]]
+
 - \[*C*\]  H. Cai, *S. A. Alghunaim*, and A. H. Sayed, ``[ Diffusion optimistic learning for min-max optimization],''  /Proc. IEEE ICASSP/, pp. 1-5, Seoul, South Korea, April 2024.
 
 -  \[*J*\] *S. A. Alghunaim* and K. Yuan, ``[https://www.sciencedirect.com/science/article/pii/S016516842300419X An enhanced gradient-tracking bound for distributed online stochastic convex optimization],'' /Signal Processing/, Volume 217, April 2024. [https://arxiv.org/abs/2301.02855 \[arXiv\]]
