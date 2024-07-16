@@ -1,6 +1,5 @@
-# jemdoc:  nofooter
-
-[../index.html Main page]
+# jemdoc: menu{MENU}{slides.html}{../}, nofooter
 = Slides 
+
 - [suda_led.pdf Unified Decentralized Algorithms]
 
