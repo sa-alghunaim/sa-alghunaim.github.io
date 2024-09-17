@@ -12,8 +12,8 @@ Information about graduate courses can be found [https://kuweb.ku.edu.kw/COGS/Ac
 - ENGR205: /Electrical Engineering Fundamentals/.
 (last taught: Spring 2021/2022)
 
-- [./courses/ee312/ee312.html EE312: /Signals and Systems/.]
-(last taught: Fall 2024/2025)
+-  EE312:/Signals and Systems/.
+([./courses/ee312/ee312.html Fall 2024/2025])
 
 - EE370: /Control Theory I/. (last taught Spring 2023/2024)
 
@@ -26,5 +26,5 @@ Information about graduate courses can be found [https://kuweb.ku.edu.kw/COGS/Ac
 
 - ENGR504: /Numerical Analysis and Computation/. (last taught Fall 2024/2025)
 
-- [./courses/engr507/engr507.html ENGR507: /Mathematical Optimization/.] 
-(last taught: Fall 2023/2024) 
+- ENGR507: /Mathematical Optimization/. 
+(last taught: [./courses/engr507/engr507.html Fall 2023/2024]) 
