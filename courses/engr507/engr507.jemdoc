@@ -5,7 +5,7 @@
 This is a graduate level introductory course  focusing on optimization fundamentals and their practical applications.
 
 == Slides (Spring 2025)
-
+These slides keep being updated through the course.
 - [0_intro_507_slides.pdf  Introduction]
 - [01_vectors_matrices_507_slides.pdf 1. Vectors and matrices]
 - [02_algebra_background_507_slides.pdf 2. Algebra background]
@@ -16,12 +16,9 @@ This is a graduate level introductory course  focusing on optimization fundament
 - [07_least_squares_507_slides.pdf 7. Least squares]
 - [08_constrained_opt_507_slides.pdf 8. Constrained optimization]
 - [09_convex_opt_507_slides.pdf 9. Convex optimization]
-
-== Slides (Fall 2023)
-- [10_linear_programs_507_slides.pdf 10. Linear programs]
-- [11_special_cvx_problems_507_slides.pdf 11. Special classes of convex optimization]
-- [12_duality_507_slides.pdf 12. Duality]
-- [13_dual_based_methods_507_slides.pdf 13. Dual based method]
-- [14_neural_network_507_slides.pdf 14. Neural networks]
+- [10_special_cvx_problems_507_slides.pdf 10. Special convex optimization problems]
+- [11_duality_507_slides.pdf 11. Duality]
+- [12_constrained_algorithms_507_slides.pdf 12. Algorithms for constrained optimization]
+- [13_neural_network_507_slides.pdf 13. Neural networks]
 
 
