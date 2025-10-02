@@ -1,0 +1,22 @@
+# jemdoc:  nofooter
+= ENGR308: Numerical Methods in Engineering
+[../../index.html Main page]
+
+
+
+== Lecture slides (Fall 2025)
+
+- [00_intro_308_slides.pdf Introduction]
+- [01_modelling_308.pdf 1 Modelling]
+- [02_errors_308.pdf 2 Round-off and truncation errors]
+- [03_roots_bracketing_308.pdf 3 Roots of equations: bracketing methods]
+- [04_roots_open_308.pdf 4 Roots of equations: open methods]
+- [05_systems_of_equations_308.pdf 5 Systems of equations]
+
+== Other slides
+- [MATLAB_intro.pdf Introduction to MATLAB]
+- [vectors_matrices_review.pdf Vectors and matrices review]
+
+
+
+
