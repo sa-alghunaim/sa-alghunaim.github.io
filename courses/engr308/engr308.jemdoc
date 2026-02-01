@@ -2,21 +2,22 @@
 = ENGR308: Numerical Methods in Engineering
 [../../index.html Main page]
 
+== Lecture slides (Spring 2026)
 
+- [00_intro_308.pdf Introduction]
+- [01_modelling_308.pdf 1. Modelling]
 
 == Lecture slides (Fall 2025)
 
-- [00_intro_308_slides.pdf Introduction]
-- [01_modelling_308.pdf 1 Modelling]
-- [02_errors_308.pdf 2 Round-off and truncation errors]
-- [03_roots_bracketing_308.pdf 3 Roots of equations: bracketing methods]
-- [04_roots_open_308.pdf 4 Roots of equations: open methods]
-- [05_systems_of_equations_308.pdf 5 Systems of equations]
-- [06_ls_regression_308.pdf 6 Least squares regression]
-- [07_interpolation_308.pdf 7 Interpolation]
-- [08_numerical_integration_308.pdf 8 Numerical integration]
-- [09_numerical_differentiation_308.pdf 9 Numerical differentiation]
-- [10_ode_308.pdf 10 Ordinary differential equations]
+- [02_errors_308.pdf Round-off and truncation errors]
+- [03_roots_bracketing_308.pdf Roots of equations: bracketing methods]
+- [04_roots_open_308.pdf Roots of equations: open methods]
+- [05_systems_of_equations_308.pdf Systems of equations]
+- [06_ls_regression_308.pdf Least squares regression]
+- [07_interpolation_308.pdf Interpolation]
+- [08_numerical_integration_308.pdf Numerical integration]
+- [09_numerical_differentiation_308.pdf Numerical differentiation]
+- [10_ode_308.pdf Ordinary differential equations]
 
 == Other slides
 - [vectors_matrices_review.pdf Vectors and matrices review]
