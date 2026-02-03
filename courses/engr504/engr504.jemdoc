@@ -7,25 +7,26 @@ at UCLA and Profs. Boyd and Vandenberghe's book [https://web.stanford.edu/~boyd/
 
 == Lecture slides (Spring 2026)
 
+- [00_intro_504.pdf Introduction]
+
 == Lecture slides (Fall 2024)
 
-- [00_intro_504_slides.pdf Introduction]
-- [01_precision_errors_504.pdf 1 Numerical precision and errors]
-- [02_vectors_504.pdf 2 Vectors]
-- [03_norm_distance_504.pdf 3 Norm and distance]
-- [04_matrices_504.pdf 4 Matrices]
-- [05_linear_models_504.pdf 5 Linear models]
-- [06_inverses_504.pdf 6 Matrix inverses]
-- [07_lu_factor_504.pdf 7 LU factorization]
-- [08_qr_fact_504.pdf 8 QR factorization]
-- [09_ls_504.pdf 9 Least squares]
-- [10_ls_data_fit_504.pdf 10 Least squares data-fitting]
-- [11_constrained_ls_504.pdf 11 Constrained least squares]
-- [12_non_linear_eq_opt_504.pdf 12 Nonlinear equations and optimization]
-- [13_nonlinear_ls_504.pdf 13 Nonlinear least squares]
-- [14_constrained_optimization_504.pdf 14 Constrained optimization]
-- [15_svd_504.pdf 15 Singular value decomposition]
-- [16_eig_methods_504.pdf 16 Computing eigenvalues and eigenvectors]
+- [01_precision_errors_504.pdf Numerical precision and errors]
+- [02_vectors_504.pdf Vectors]
+- [03_norm_distance_504.pdf Norm and distance]
+- [04_matrices_504.pdf Matrices]
+- [05_linear_models_504.pdf Linear models]
+- [06_inverses_504.pdf Matrix inverses]
+- [07_lu_factor_504.pdf LU factorization]
+- [08_qr_fact_504.pdf QR factorization]
+- [09_ls_504.pdf Least squares]
+- [10_ls_data_fit_504.pdf Least squares data-fitting]
+- [11_constrained_ls_504.pdf Constrained least squares]
+- [12_non_linear_eq_opt_504.pdf Nonlinear equations and optimization]
+- [13_nonlinear_ls_504.pdf Nonlinear least squares]
+- [14_constrained_optimization_504.pdf Constrained optimization]
+- [15_svd_504.pdf Singular value decomposition]
+- [16_eig_methods_504.pdf Computing eigenvalues and eigenvectors]
 
 
 
