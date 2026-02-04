@@ -8,12 +8,11 @@ at UCLA and Profs. Boyd and Vandenberghe's book [https://web.stanford.edu/~boyd/
 == Lecture slides (Spring 2026)
 
 - [00_intro_504.pdf Introduction]
+- [01_precision_errors_504.pdf 1. Numerical precision and errors]
+- [02_vectors_504.pdf 2. Vectors]
 
 == Lecture slides (Fall 2024)
 
-- [01_precision_errors_504.pdf Numerical precision and errors]
-- [02_vectors_504.pdf Vectors]
-- [03_norm_distance_504.pdf Norm and distance]
 - [04_matrices_504.pdf Matrices]
 - [05_linear_models_504.pdf Linear models]
 - [06_inverses_504.pdf Matrix inverses]
