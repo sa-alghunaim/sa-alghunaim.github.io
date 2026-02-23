@@ -11,12 +11,13 @@ at UCLA and Profs. Boyd and Vandenberghe's book [https://web.stanford.edu/~boyd/
 - [01_precision_errors_504.pdf 1. Numerical precision and errors]
 - [02_vectors_504.pdf 2. Vectors]
 - [03_matrices_504.pdf 3. Matrices]
+- [04_rank_inverses_504.pdf 4. Matrix rank and inverses]
+- [05_orthogonality_504.pdf 5. Orthogonality]
+- [06_qr_fact_504.pdf 6. QR factorization]
+- [07_solve_linear_eq_504.pdf 7. Solving linear equations]
 
 == Lecture slides (Fall 2024)
 
-- [06_inverses_504.pdf Matrix inverses]
-- [07_lu_factor_504.pdf LU factorization]
-- [08_qr_fact_504.pdf QR factorization]
 - [09_ls_504.pdf Least squares]
 - [10_ls_data_fit_504.pdf Least squares data-fitting]
 - [11_constrained_ls_504.pdf Constrained least squares]
