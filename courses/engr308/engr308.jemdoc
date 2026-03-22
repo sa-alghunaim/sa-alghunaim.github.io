@@ -12,12 +12,10 @@
 - [05_systems_of_equations_308.pdf 5. Systems of equations]
 - [06_ls_regression_308.pdf 6. Least squares regression]
 - [07_interpolation_308.pdf 7. Interpolation]
-
-== Lecture slides (Fall 2025)
-
-- [08_numerical_integration_308.pdf Numerical integration]
-- [09_numerical_differentiation_308.pdf Numerical differentiation]
-- [10_ode_308.pdf Ordinary differential equations]
+- [08_numerical_integration_308.pdf 8. Numerical integration]
+- [09_numerical_differentiation_308.pdf 9. Numerical differentiation]
+- [10_ode_308.pdf 10. Ordinary differential equations]
+- [11_bvp_308.pdf 11. Boundary-value problems]
 
 == Other slides
 - [vectors_matrices_review.pdf Vectors and matrices review]
