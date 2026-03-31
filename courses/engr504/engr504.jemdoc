@@ -18,10 +18,10 @@ Some slide content is adapted from Prof. Vandenberghe's [https://www.seas.ucla.e
 - [07_solve_linear_eq_504.pdf 7. Solving linear equations]
 - [08_psd_matrices_504.pdf 8. Positive semidefinite matrices]
 - [09_ls_504.pdf 9. Least squares]
+- [10_ls_data_fit_504.pdf 10. Least squares data-fitting]
 
 == Lecture slides (Fall 2024)
 
-- [10_ls_data_fit_504.pdf Least squares data-fitting]
 - [11_constrained_ls_504.pdf Constrained least squares]
 - [12_non_linear_eq_opt_504.pdf Nonlinear equations and optimization]
 - [13_nonlinear_ls_504.pdf Nonlinear least squares]
