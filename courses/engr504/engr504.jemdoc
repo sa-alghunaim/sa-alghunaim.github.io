@@ -19,12 +19,12 @@ Some slide content is adapted from Prof. Vandenberghe's [https://www.seas.ucla.e
 - [08_psd_matrices_504.pdf 8. Positive semidefinite matrices]
 - [09_ls_504.pdf 9. Least squares]
 - [10_ls_data_fit_504.pdf 10. Least squares data-fitting]
+- [11_constrained_ls_504.pdf 11. Constrained least squares]
+- [12_non_linear_eq_opt_504.pdf 12. Nonlinear equations and optimization]
+- [13_nonlinear_ls_504.pdf 13. Nonlinear least squares]
 
 == Lecture slides (Fall 2024)
 
-- [11_constrained_ls_504.pdf Constrained least squares]
-- [12_non_linear_eq_opt_504.pdf Nonlinear equations and optimization]
-- [13_nonlinear_ls_504.pdf Nonlinear least squares]
 - [14_constrained_optimization_504.pdf Constrained optimization]
 - [15_svd_504.pdf Singular value decomposition]
 - [16_eig_methods_504.pdf Computing eigenvalues and eigenvectors]
