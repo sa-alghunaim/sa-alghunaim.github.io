@@ -17,6 +17,10 @@
 
 
 == Journals and Conferences
+- \[*C*\]  *S. A. Alghunaim*, ``[https://ieeexplore.ieee.org/abstract/document/11464979 Achieving linear speed-up for distributed inexact-ADMM],''  /Proc. IEEE ICASSP/, pp. 1-5, Barcelona, Spain, May 2026.
+
+- \[*C*\]  H. Cai, *S. A. Alghunaim*, A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/11462899 Decentralized accelerated nonconvex minimax optimization via exact diffusion],''  /Proc. IEEE ICASSP/, pp. 1-5, Barcelona, Spain, May 2026.
+
 -  \[*J*\] H. Cai, *S. A. Alghunaim*, A. H. Sayed, ``[https://ieeexplore.ieee.org/document/10794742 Diffusion stochastic optimization for min-max problems],'' /IEEE Trans. on Signal Processing/, vol. 73, pp. 259-274, 2025. [https://arxiv.org/abs/2401.14585 \[arXiv\]]
 
 -  \[*J*\] *S. A. Alghunaim*, ``[https://ieeexplore.ieee.org/document/10487872 Local exact-diffusion for decentralized optimization and learning],'' /IEEE Trans. Automatic Control/, vol. 69, no. 11, pp. 7371-7386, Nov. 2024. [https://arxiv.org/abs/2302.00620 \[arXiv\]]
