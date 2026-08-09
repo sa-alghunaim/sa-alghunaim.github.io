@@ -10,22 +10,22 @@
 
 -  H. Cai, *S. A. Alghunaim*, A. H. Sayed, ``[https://arxiv.org/abs/2507.21901 Communication-efficient algorithms for distributed nonconvex minimax optimization problems],'' arXiv:2507.21901, July, 2025. 
 
--  H. Cai, *S. A. Alghunaim*, A. H. Sayed, ``[https://arxiv.org/abs/2406.13041 Accelerated stochastic min-max optimization based on bias-corrected momentum],'' arXiv:2406.1304, June, 2024. 
-
 -  L. Guo, *S. A. Alghunaim*, K. Yuan, L. Condat, J. Cao, ``[https://arxiv.org/abs/2310.07983 Achieving linear speedup with ProxSkip in distributed stochastic optimization],'' arXiv:2310.07983, Oct., 2023. 
  
 
 
 == Journals and Conferences
-- \[*C*\]  *S. A. Alghunaim*, ``[https://ieeexplore.ieee.org/abstract/document/11464979 Achieving linear speed-up for distributed inexact-ADMM],''  /Proc. IEEE ICASSP/, pp. 1-5, Barcelona, Spain, May 2026.
+-  \[*J*\] H. Cai, *S. A. Alghunaim*, A. H. Sayed, ``[https://ieeexplore.ieee.org/document/11643524  Accelerated stochastic min-max optimization based on bias-corrected momentum],'' /IEEE Trans. Automatic Control/ (early access), 2026. [https://arxiv.org/abs/2406.13041 \[arXiv\]]
 
-- \[*C*\]  H. Cai, *S. A. Alghunaim*, A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/11462899 Decentralized accelerated nonconvex minimax optimization via exact diffusion],''  /Proc. IEEE ICASSP/, pp. 1-5, Barcelona, Spain, May 2026.
+- \[*C*\]  *S. A. Alghunaim*, ``[https://ieeexplore.ieee.org/abstract/document/11464979 Achieving linear speed-up for distributed inexact-ADMM],''  /Proc. IEEE ICASSP/, pp. 21686-21690, Barcelona, Spain, May 2026.
+
+- \[*C*\]  H. Cai, *S. A. Alghunaim*, A. H. Sayed, ``[https://ieeexplore.ieee.org/abstract/document/11462899 Decentralized accelerated nonconvex minimax optimization via exact diffusion],''  /Proc. IEEE ICASSP/, pp. 261-265, Barcelona, Spain, May 2026.
 
 -  \[*J*\] H. Cai, *S. A. Alghunaim*, A. H. Sayed, ``[https://ieeexplore.ieee.org/document/10794742 Diffusion stochastic optimization for min-max problems],'' /IEEE Trans. on Signal Processing/, vol. 73, pp. 259-274, 2025. [https://arxiv.org/abs/2401.14585 \[arXiv\]]
 
 -  \[*J*\] *S. A. Alghunaim*, ``[https://ieeexplore.ieee.org/document/10487872 Local exact-diffusion for decentralized optimization and learning],'' /IEEE Trans. Automatic Control/, vol. 69, no. 11, pp. 7371-7386, Nov. 2024. [https://arxiv.org/abs/2302.00620 \[arXiv\]]
 
-- \[*C*\]  H. Cai, *S. A. Alghunaim*, A. H. Sayed, ``[https://ieeexplore.ieee.org/document/10447140 Diffusion optimistic learning for min-max optimization],''  /Proc. IEEE ICASSP/, pp. 1-5, Seoul, South Korea, April 2024.
+- \[*C*\]  H. Cai, *S. A. Alghunaim*, A. H. Sayed, ``[https://ieeexplore.ieee.org/document/10447140 Diffusion optimistic learning for min-max optimization],''  /Proc. IEEE ICASSP/, pp. 5535-5539, Seoul, South Korea, April 2024.
 
 -  \[*J*\] *S. A. Alghunaim*, K. Yuan, ``[https://www.sciencedirect.com/science/article/pii/S016516842300419X An enhanced gradient-tracking bound for distributed online stochastic convex optimization],'' /Signal Processing/, Volume 217, April 2024. [https://arxiv.org/abs/2301.02855 \[arXiv\]]
 
