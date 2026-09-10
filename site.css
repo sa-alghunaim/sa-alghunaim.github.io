@@ -374,11 +374,11 @@ pre code { background: transparent; padding: 0; }
   }
 
   #layout-menu {
-    width: 122px !important;
-    min-width: 122px !important;
-    max-width: 122px !important;
-    padding: 10px 5px 20px;
-    font-size: 13px !important;
+    width: 130px !important;
+    min-width: 130px !important;
+    max-width: 130px !important;
+    padding: 10px 8px 20px;
+    font-size: 14px !important;
     white-space: nowrap;
   }
 
@@ -386,22 +386,19 @@ pre code { background: transparent; padding: 0; }
   #layout-menu .menu-item,
   #layout-menu .menu-item a,
   #layout-menu a {
-    font-size: 13px !important;
+    font-size: 14px !important;
     white-space: nowrap !important;
     overflow-wrap: normal !important;
     word-break: normal !important;
     hyphens: none !important;
   }
 
-  .menu-item { padding: 2px 4px; }
-  .menu-category { padding: 3px 4px 2px; }
-
   #layout-content {
-    margin-left: 122px;
-    width: calc(100% - 122px);
+    margin-left: 130px;
+    width: calc(100% - 130px);
     max-width: none;
     min-height: 100vh;
-    padding: 15px 6px 14px;
+    padding: 15px 10px 14px;
     font-size: 15px !important;
     line-height: 1.32 !important;
   }
@@ -420,7 +417,7 @@ pre code { background: transparent; padding: 0; }
 
   #layout-content ul,
   #layout-content ol {
-    padding-left: 1.1rem;
+    padding-left: 1.35rem;
   }
 
   /* On phones, keep normal words intact instead of allowing links to split
