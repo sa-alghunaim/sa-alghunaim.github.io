@@ -1,4 +1,4 @@
-# jemdoc: menu{MENU}{engr308.html}{../../}, nodefaultcss, addcss{../../site.css}, nofooter
+# jemdoc: menu{MENU}{engr308.html}{../../}, nodefaultcss, addcss{../../site.css}, addjs{../../menu}, nofooter
 = ENGR308: Numerical Methods in Engineering
 
 == Lecture slides (Spring 2026)

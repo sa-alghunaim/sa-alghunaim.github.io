@@ -1,4 +1,4 @@
-# jemdoc: menu{MENU}{index.html}, nodefaultcss, addcss{site.css}, nofooter
+# jemdoc: menu{MENU}{index.html}, nodefaultcss, addcss{site.css}, addjs{menu}, nofooter
 = Sulaiman A. Alghunaim
 
 ~~~

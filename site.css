@@ -356,35 +356,79 @@ pre code { background: transparent; padding: 0; }
 #site-footer a { color: var(--link); text-decoration: none; }
 #site-footer a:hover { color: var(--link-hover); text-decoration: underline; }
 
-/* Mobile: keep the same left sidebar, but as narrow as possible. */
+/* Desktop/tablet: no hamburger button, no backdrop. */
+#layout-menu-toggle,
+#layout-menu-backdrop {
+  display: none;
+}
+
+/* Mobile: sidebar becomes an off-canvas overlay (hamburger toggle),
+   so the content column keeps its full desktop-like width and the
+   menu, when open, keeps the same one-line-per-item layout as desktop. */
 @media (max-width: 760px) {
   html {
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
   }
 
+  #layout-menu-toggle {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 101;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--menu-border);
+    border-radius: 4px;
+    background: var(--menu-bg);
+    color: #343b40;
+    font-size: 20px;
+    line-height: 38px;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  #layout-menu-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+
+  #layout-menu-backdrop.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
   #layout-menu {
-    width: 100px !important;
-    min-width: 100px !important;
-    max-width: 100px !important;
-    padding: 8px 6px 16px;
-    font-size: 13px !important;
-    white-space: normal;
+    z-index: 100;
+    width: var(--sidebar-width) !important;
+    min-width: var(--sidebar-width) !important;
+    max-width: var(--sidebar-width) !important;
+    padding-top: 56px;
+    white-space: nowrap;
+    transform: translateX(-100%);
+    transition: transform 0.2s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
   }
 
-  #layout-menu .menu-category,
-  #layout-menu .menu-item,
-  #layout-menu .menu-item a,
-  #layout-menu a {
-    font-size: 13px !important;
+  #layout-menu.open {
+    transform: translateX(0);
   }
 
+  /* Content keeps the full screen width; the menu overlays on top of it. */
   #layout-content {
-    margin-left: 100px;
-    width: calc(100% - 100px);
+    margin-left: 0;
+    width: 100%;
     max-width: none;
     min-height: 100vh;
-    padding: 12px 8px 16px;
+    padding: 60px 16px 16px;
   }
 }
 
