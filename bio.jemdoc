@@ -1,4 +1,4 @@
-# jemdoc: menu{MENU}{bio.html}, nodefaultcss, addcss{site.css}, addjs{menu}, nofooter
+# jemdoc: menu{MENU}{bio.html}, nodefaultcss, addcss{site.css}, nofooter
 =Biography
 
 Sulaiman A. Alghunaim is an Associate Professor in the Department of Electrical Engineering at Kuwait University. He received the B.S. degree in Electrical Engineering from Kuwait University in 2013, and the M.S. and Ph.D. degrees in Electrical and Computer Engineering from the University of California, Los Angeles in 2016 and 2020, respectively. His research focuses on the design and analysis of optimization algorithms, with applications in multi-agent systems, control, signal processing, and machine learning. His current work focuses on distributed optimization and learning. 

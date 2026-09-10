@@ -1,4 +1,4 @@
-# jemdoc: menu{MENU}{publications.html}, nodefaultcss, addcss{site.css}, addjs{menu}, nofooter
+# jemdoc: menu{MENU}{publications.html}, nodefaultcss, addcss{site.css}, nofooter
 = Publications 
 
 [https://scholar.google.com/citations?user=_FTElPsAAAAJ&hl=en Google scholar profile]
