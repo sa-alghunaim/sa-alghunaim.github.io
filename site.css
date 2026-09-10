@@ -1,6 +1,9 @@
 /*
  * Personal jemdoc-cvx theme for Sulaiman A. Alghunaim
- * One fixed desktop sidebar and one typography scale on every page.
+ * Grid layout (same mechanism as the reference jemdoc-cvx theme /
+ * Boyd's site): the menu column auto-sizes to its own content, the
+ * content column takes the rest. No fixed positioning, no JS, no
+ * separate mobile mode — it reflows on its own at any width.
  */
 
 :root {
@@ -16,7 +19,6 @@
   --soft-rule: #dce3e7;
   --block-bg: #f6f8f9;
   --code-bg: #f3f5f6;
-  --sidebar-width: 190px;
 }
 
 * { box-sizing: border-box; }
@@ -45,34 +47,14 @@ body {
   line-height: 1.3;
 }
 
-/* The page content can never change the desktop sidebar geometry. */
 #tlayout {
-  display: block;
-  min-width: 980px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
   min-height: 100vh;
   width: 100%;
-  /* Keep the sidebar colour running for the full document height,
-     including below the viewport on long pages. */
-  background: linear-gradient(
-    to right,
-    var(--menu-bg) 0,
-    var(--menu-bg) var(--sidebar-width),
-    var(--page-bg) var(--sidebar-width),
-    var(--page-bg) 100%
-  );
 }
 
 #layout-menu {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: var(--sidebar-width) !important;
-  min-width: var(--sidebar-width) !important;
-  max-width: var(--sidebar-width) !important;
-  overflow-y: auto;
-  overflow-x: hidden;
   padding: 12px 12px 24px;
   background: var(--menu-bg);
   border-right: 1px solid var(--menu-border);
@@ -129,11 +111,8 @@ body {
   text-underline-offset: 3px;
 }
 
-/* Main text starts after the fixed sidebar and uses one fixed scale. */
+/* Main text sits in the remaining grid column and uses one fixed scale. */
 #layout-content {
-  margin-left: var(--sidebar-width);
-  width: calc(100% - var(--sidebar-width));
-  max-width: none;
   min-width: 0;
   min-height: 100vh;
   display: flex;
@@ -366,79 +345,151 @@ pre code { background: transparent; padding: 0; }
 #site-footer a { color: var(--link); text-decoration: none; }
 #site-footer a:hover { color: var(--link-hover); text-decoration: underline; }
 
+/* Desktop/tablet: no hamburger button, no backdrop — the grid layout
+   above handles everything, the menu is always visible inline. */
+#layout-menu-toggle,
+#layout-menu-backdrop {
+  display: none;
+}
 
-/*
- * Mobile behavior intentionally follows Stephen Boyd's classic jemdoc site:
- * keep the desktop two-column geometry instead of squeezing/reflowing it.
- * With no width=device-width viewport meta tag, phone browsers render this
- * desktop-width canvas and scale it to the screen.
- */
+/* Mobile: menu becomes a tap-to-open off-canvas overlay, so content
+   gets the full screen width when it's closed. */
 @media (max-width: 760px) {
-  /* Do not change sidebar or content widths/typography on phones. */
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  /* Grid isn't needed here: the menu is taken out of flow (fixed),
+     so content just becomes a normal full-width block. */
+  #tlayout {
+    display: block;
+  }
+
+  #layout-menu-toggle {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 101;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--menu-border);
+    border-radius: 4px;
+    background: var(--menu-bg);
+    color: #343b40;
+    font-size: 20px;
+    line-height: 38px;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  #layout-menu-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+
+  #layout-menu-backdrop.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
   #layout-menu {
-    width: var(--sidebar-width) !important;
-    min-width: var(--sidebar-width) !important;
-    max-width: var(--sidebar-width) !important;
-    padding: 12px 12px 24px;
-    font-size: 17px !important;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: min(240px, calc(100vw - 44px));
+    overflow-y: auto;
+    padding-top: 56px;
+    white-space: nowrap;
+    transform: translateX(-100%);
+    transition: transform 0.2s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
   }
 
-  #layout-menu .menu-category,
-  #layout-menu .menu-item,
-  #layout-menu .menu-item a,
-  #layout-menu a {
-    font-size: 17px !important;
+  #layout-menu.open {
+    transform: translateX(0);
   }
 
+  /* Content uses essentially the entire phone width; the menu overlays it. */
   #layout-content {
-    margin-left: var(--sidebar-width);
-    width: calc(100% - var(--sidebar-width));
-    min-width: 790px;
-    padding: 17px 29px 16px;
-    font-size: 16px !important;
-    line-height: 1.3 !important;
+    width: 100%;
+    padding: 58px 14px 16px;
   }
 
-  #layout-content p,
-  #layout-content li,
-  #layout-content dt,
-  #layout-content dd,
-  #layout-content blockquote,
-  #layout-content table,
-  #layout-content td,
-  #layout-content th {
-    font-size: 16px !important;
-    line-height: 1.3 !important;
+  /* On phones, keep normal words intact instead of allowing links to split
+     at arbitrary character positions. */
+  #layout-content a {
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
   }
 
-  table.imgtable,
+  #layout-content a[href^="mailto:"] {
+    overflow-wrap: anywhere;
+  }
+
+  /* Avoid awkward two-line headings on narrow phones without changing desktop. */
+  h1 {
+    font-size: clamp(22px, 6.5vw, 26px);
+  }
+}
+
+@media (max-width: 520px) {
+  /* On a phone, stacking the profile block gives the affiliation text the full
+     screen width instead of squeezing it beside the photo. */
+  table.imgtable {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
   table.imgtable tbody,
   table.imgtable tr {
-    display: table !important;
+    display: block !important;
+    width: 100% !important;
   }
 
-  table.imgtable tbody { display: table-row-group !important; }
-  table.imgtable tr { display: table-row !important; }
   table.imgtable td,
   table.imgtable td:first-child,
   table.imgtable td:first-child + td {
-    display: table-cell !important;
+    display: block !important;
   }
 
   table.imgtable td:first-child {
-    width: 160px !important;
-    min-width: 160px !important;
-    max-width: 160px !important;
+    width: 125px !important;
+    min-width: 125px !important;
+    max-width: 125px !important;
   }
 
   table.imgtable td:first-child img {
-    width: 160px !important;
-    height: 160px !important;
+    width: 125px !important;
+    height: 125px !important;
   }
 
   table.imgtable td:first-child + td {
-    width: auto !important;
-    padding-left: 10px !important;
-    padding-top: 0 !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-top: 9px !important;
+    font-size: 15px !important;
+    line-height: 1.32 !important;
+  }
+
+  table.imgtable td:first-child + td p {
+    font-size: 15px !important;
+    line-height: 1.32 !important;
+  }
+
+  table.imgtable td:first-child + td p {
+    margin-bottom: 0 !important;
   }
 }
