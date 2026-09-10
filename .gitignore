@@ -1,0 +1,4 @@
+node_modules/
+katexcache/
+.DS_Store
+Thumbs.db

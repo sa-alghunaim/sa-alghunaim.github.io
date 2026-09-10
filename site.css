@@ -1,0 +1,413 @@
+/*
+ * Personal jemdoc-cvx theme for Sulaiman A. Alghunaim
+ * One fixed desktop sidebar and one typography scale on every page.
+ */
+
+:root {
+  --page-bg: #ffffff;
+  --menu-bg: #eceff1;
+  --menu-border: #d2d7db;
+  --text: #000000;
+  --muted: #626d74;
+  --heading: #0047AB;
+  --link: #0e00cc;
+  --link-hover: #0047AB;
+  --rule: #b5c6d1;
+  --soft-rule: #dce3e7;
+  --block-bg: #f6f8f9;
+  --code-bg: #f3f5f6;
+  --sidebar-width: 190px;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background: var(--page-bg);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: var(--page-bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px !important;
+  line-height: 1.3;
+}
+
+/* The page content can never change the desktop sidebar geometry. */
+#tlayout {
+  display: block;
+  min-height: 100vh;
+  width: 100%;
+}
+
+#layout-menu {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: var(--sidebar-width) !important;
+  min-width: var(--sidebar-width) !important;
+  max-width: var(--sidebar-width) !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 12px 12px 24px;
+  background: var(--menu-bg);
+  border-right: 1px solid var(--menu-border);
+  color: #343b40;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 17px !important;
+  line-height: 1.3 !important;
+  white-space: nowrap;
+}
+
+#layout-menu .menu-category,
+#layout-menu .menu-item,
+#layout-menu .menu-item a,
+#layout-menu a {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 17px !important;
+  line-height: 1.35 !important;
+}
+
+.menu-category {
+  margin-top: 14px;
+  padding: 3px 6px 2px;
+  color: #343b40;
+  font-weight: 700;
+  border-bottom: 1px solid #c7cdd1;
+}
+
+.menu-category:first-child { margin-top: 2px; }
+
+.menu-item {
+  margin: 0;
+  padding: 2px 7px;
+}
+
+.menu-item a {
+  display: block;
+  color: var(--link);
+  font-weight: 400 !important;
+  text-decoration: none;
+}
+
+.menu-item a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.menu-item a.current {
+  color: var(--link);
+  font-weight: 400 !important;
+  text-decoration: underline;
+  text-decoration-color: #777777;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+/* Main text starts after the fixed sidebar and uses one fixed scale. */
+#layout-content {
+  margin-left: var(--sidebar-width);
+  width: calc(100% - var(--sidebar-width));
+  max-width: 1100px;
+  min-width: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 17px 29px 16px;
+  background: var(--page-bg);
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.3 !important;
+}
+
+#layout-content p,
+#layout-content li,
+#layout-content dt,
+#layout-content dd,
+#layout-content blockquote,
+#layout-content table,
+#layout-content td,
+#layout-content th {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.3 !important;
+}
+
+#layout-content a,
+#layout-content b,
+#layout-content strong,
+#layout-content i,
+#layout-content em {
+  font-size: inherit;
+}
+
+#layout-content a {
+  overflow-wrap: anywhere;
+}
+
+#toptitle {
+  margin-bottom: 19px;
+  padding-bottom: 2px;
+  border-bottom: 3px double var(--rule);
+}
+
+#toptitle + h2,
+#toptitle + h3 { margin-top: -6px; }
+
+h1, h2, h3, h4 {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+h1, h2, h3 {
+  color: var(--heading);
+  font-weight: 650;
+  line-height: 1.22;
+}
+
+h1 {
+  margin: 3px 0 4px;
+  padding: 0 0 4px;
+  font-size: 29.6px;
+}
+
+h2 {
+  margin: 23px 0 9px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--rule);
+  font-size: 20.8px;
+}
+
+h3 {
+  margin: 18px 0 6px;
+  font-size: 17.28px;
+}
+
+h4 {
+  margin: 17px 0 7px;
+  font-size: 16px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.8em;
+  padding: 0;
+  line-height: 1.3;
+}
+
+a, a > code {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Tight ordinary bullets, close to the old Jemdoc site. */
+ul, ol, dl {
+  margin-top: 0.08em;
+  padding-top: 0;
+  margin-bottom: 0.55em;
+}
+
+ul, ol { padding-left: 1.65rem; }
+ul { list-style-position: outside; list-style-type: square; }
+ol { list-style-position: outside; list-style-type: decimal; }
+ol ol { list-style-type: lower-alpha; }
+ol ol ol { list-style-type: lower-roman; }
+
+p + ul, p + ol { margin-top: -0.62em; }
+li { margin: 0; padding: 0; }
+li ul, li ol { margin-top: -0.42em; margin-bottom: 0.3em; }
+li p, dd p { margin-top: 0; margin-bottom: 0.06em; }
+
+/* Lecture/slide PDF lists get extra breathing room. */
+#layout-content li:has(a[href$=".pdf" i]) {
+  margin-bottom: 0.34em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+/* Profile photo + affiliation: compact and side-by-side. */
+table.imgtable {
+  display: table !important;
+  width: auto !important;
+  max-width: none !important;
+  table-layout: auto !important;
+  border: 0;
+  border-collapse: collapse;
+  margin: 0 0 1rem 0;
+}
+
+table.imgtable tbody { display: table-row-group !important; }
+table.imgtable tr { display: table-row !important; }
+
+table.imgtable td {
+  display: table-cell !important;
+  width: auto !important;
+  padding: 0 !important;
+  border: 0;
+  vertical-align: top;
+  text-align: left;
+}
+
+table.imgtable td:first-child {
+  width: 160px !important;
+  min-width: 160px !important;
+  max-width: 160px !important;
+  font-size: 0 !important;
+}
+
+table.imgtable td:first-child + td {
+  width: auto !important;
+  padding-left: 10px !important;
+  font-size: 16px !important;
+  line-height: 1.3 !important;
+}
+
+table.imgtable td:first-child + td p {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  font-size: 16px !important;
+  line-height: 1.3 !important;
+}
+
+table.imgtable img {
+  display: block;
+  margin: 0 !important;
+}
+
+/* Ordinary tables */
+table {
+  border-collapse: collapse;
+  margin: 0.75rem 0 1.1rem;
+  max-width: 100%;
+}
+
+td, th {
+  padding: 0.28rem 0.5rem;
+  border: 1px solid var(--soft-rule);
+  text-align: left;
+}
+
+th { background: #f3f5f6; }
+
+.infoblock, .codeblock { margin: 0.95rem 0; }
+.infoblock .blockcontent {
+  padding: 0.62rem 0.8rem;
+  background: var(--block-bg);
+  border: 1px solid #d9e0e4;
+}
+.blocktitle {
+  color: #343b40;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+pre, code, tt {
+  font-family: Consolas, "Courier New", monospace !important;
+}
+code {
+  background: var(--code-bg);
+  padding: 0.05em 0.25em;
+  border-radius: 3px;
+}
+pre {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 0.72rem;
+  background: var(--code-bg);
+  border: 1px solid var(--menu-border);
+}
+pre code { background: transparent; padding: 0; }
+
+#site-footer {
+  margin-top: auto;
+  padding-top: 0.8rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid var(--soft-rule);
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400;
+}
+#site-footer a { color: var(--link); text-decoration: none; }
+#site-footer a:hover { color: var(--link-hover); text-decoration: underline; }
+
+/* Mobile: sidebar becomes a normal top menu. */
+@media (max-width: 760px) {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  #layout-menu {
+    position: static;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    height: auto;
+    overflow: visible;
+    padding: 10px 16px 12px;
+    border-right: 0;
+    border-bottom: 1px solid var(--menu-border);
+    white-space: normal;
+  }
+
+  .menu-category {
+    display: inline-block;
+    margin: 6px 10px 1px 0;
+    padding: 0;
+    border-bottom: 0;
+  }
+
+  .menu-item {
+    display: inline-block;
+    padding: 1px 10px 1px 0;
+  }
+
+  #layout-content {
+    margin-left: 0;
+    width: 100%;
+    max-width: none;
+    min-height: 100vh;
+    padding: 15px 16px 16px;
+  }
+}
+
+@media (max-width: 520px) {
+  table.imgtable td:first-child {
+    width: 125px !important;
+    min-width: 125px !important;
+    max-width: 125px !important;
+  }
+  table.imgtable td:first-child img {
+    width: 125px !important;
+    height: 125px !important;
+  }
+  table.imgtable td:first-child + td {
+    padding-left: 8px !important;
+  }
+}

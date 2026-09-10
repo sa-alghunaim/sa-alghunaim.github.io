@@ -1,0 +1,441 @@
+/*
+ * jemdoc-cvx stylesheet for Sulaiman A. Alghunaim
+ * Uniform academic layout: same sidebar and text geometry on every page.
+ */
+
+:root {
+  --page-bg: #ffffff;
+  --menu-bg: #eceff1;
+  --menu-border: #d2d7db;
+  --text: #000000;
+  --muted: #626d74;
+  --heading: #0047AB;
+  --link: #0e00cc;
+  --link-hover: #0047AB;
+  --rule: #b5c6d1;
+  --soft-rule: #dce3e7;
+  --block-bg: #f6f8f9;
+  --code-bg: #f3f5f6;
+  --menu-width: 190px;
+  --menu-font-size: 17px;
+  --body-font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  min-height: 100%;
+  background: var(--page-bg);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scrollbar-gutter: stable;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--body-font-size);
+  line-height: 1.3;
+}
+
+/* Fixed geometry on every desktop page. */
+#tlayout {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#layout-menu {
+  flex: 0 0 var(--menu-width);
+  width: var(--menu-width);
+  min-width: var(--menu-width);
+  max-width: var(--menu-width);
+  min-height: 100vh;
+  padding: 13px 12px 24px;
+  background: var(--menu-bg);
+  border-right: 1px solid var(--menu-border);
+  color: #343b40;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--menu-font-size);
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+#layout-menu,
+#layout-menu .menu-category,
+#layout-menu .menu-item,
+#layout-menu a {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: var(--menu-font-size) !important;
+}
+
+.menu-category {
+  margin-top: 14px;
+  padding: 3px 6px 2px;
+  color: #343b40;
+  font-weight: 700;
+  line-height: 1.3;
+  border-bottom: 1px solid #c7cdd1;
+}
+
+.menu-category:first-child {
+  margin-top: 2px;
+}
+
+.menu-item {
+  margin: 0;
+  padding: 2px 7px;
+  line-height: 1.3;
+}
+
+.menu-item a {
+  display: block;
+  color: var(--link);
+  font-weight: 400;
+  line-height: 1.45;
+  text-decoration: none;
+}
+
+.menu-item a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.menu-item a.current {
+  color: var(--link);
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+#layout-content {
+  flex: 1 1 auto;
+  min-width: 0;
+  width: auto;
+  max-width: 1100px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 17px 29px 16px;
+  background: var(--page-bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--body-font-size);
+  line-height: 1.3;
+}
+
+#layout-content,
+#layout-content p,
+#layout-content li,
+#layout-content dt,
+#layout-content dd,
+#layout-content blockquote,
+#layout-content table,
+#layout-content td,
+#layout-content th {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: var(--body-font-size);
+  line-height: 1.3;
+}
+
+#toptitle {
+  margin-bottom: 19px;
+  padding-bottom: 2px;
+  border-bottom: 3px double var(--rule);
+}
+
+h1, h2, h3 {
+  color: var(--heading);
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 600;
+  line-height: 1.22;
+}
+
+h1 {
+  margin: 3px 0 4px;
+  padding: 0 0 4px;
+  font-size: 29.6px;
+}
+
+h2 {
+  margin: 23px 0 9px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--rule);
+  font-size: 20.8px;
+}
+
+h3 {
+  margin: 18px 0 6px;
+  font-size: 17.28px;
+}
+
+p {
+  margin: 0 0 0.8em;
+  padding: 0;
+}
+
+a,
+a > code {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* Tight ordinary bullets, matching the preferred Home-page spacing. */
+ul, ol, dl {
+  margin-top: 0.08em;
+  margin-bottom: 0.55em;
+  padding-top: 0;
+}
+
+ul, ol {
+  padding-left: 1.65rem;
+}
+
+ul {
+  list-style-type: square;
+  list-style-position: outside;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+
+ol ol { list-style-type: lower-alpha; }
+ol ol ol { list-style-type: lower-roman; }
+
+p + ul,
+p + ol {
+  margin-top: -0.62em;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li p,
+dd p {
+  margin-top: 0;
+  margin-bottom: 0.06em;
+}
+
+li ul,
+li ol {
+  margin-top: -0.42em;
+  margin-bottom: 0.3em;
+}
+
+/* Lecture/slide PDF lists need more space than ordinary bullets. */
+#layout-content li:has(a[href$=".pdf" i]) {
+  margin-bottom: 0.42em;
+}
+
+#layout-content li:has(a[href$=".pdf" i]) > p {
+  margin-bottom: 0;
+}
+
+/* Profile photo and text. */
+table.imgtable {
+  display: table !important;
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 0 16px;
+  border: 0;
+  border-collapse: collapse;
+  table-layout: auto !important;
+}
+
+table.imgtable tbody { display: table-row-group !important; }
+table.imgtable tr { display: table-row !important; }
+
+table.imgtable td {
+  display: table-cell !important;
+  width: auto !important;
+  padding: 0 !important;
+  border: 0;
+  vertical-align: top;
+  text-align: left;
+}
+
+table.imgtable td:first-child {
+  width: 160px !important;
+  min-width: 160px !important;
+  max-width: 160px !important;
+  font-size: 0 !important;
+}
+
+table.imgtable td:first-child + td {
+  width: auto !important;
+  padding-left: 10px !important;
+  font-size: var(--body-font-size) !important;
+  line-height: 1.3;
+}
+
+table.imgtable td:first-child + td p {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+table.imgtable img {
+  display: block;
+  margin: 0 !important;
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+/* Ordinary tables. */
+table:not(.imgtable) {
+  max-width: 100%;
+  margin: 12px 0 18px;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 4px 8px;
+  border: 1px solid var(--soft-rule);
+  text-align: left;
+}
+
+th {
+  background: #f3f5f6;
+}
+
+.infoblock,
+.codeblock {
+  margin: 15px 0;
+}
+
+.infoblock .blockcontent {
+  padding: 10px 13px;
+  background: var(--block-bg);
+  border: 1px solid #d9e0e4;
+}
+
+.blocktitle {
+  margin-bottom: 3px;
+  color: #343b40;
+  font-weight: 700;
+}
+
+pre, code, tt {
+  font-family: Consolas, "Courier New", monospace !important;
+}
+
+code {
+  padding: 0.05em 0.25em;
+  background: var(--code-bg);
+  border-radius: 3px;
+}
+
+pre {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 12px;
+  background: var(--code-bg);
+  border: 1px solid var(--menu-border);
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+}
+
+#site-footer {
+  margin-top: auto;
+  padding-top: 13px;
+  padding-bottom: 16px;
+  border-top: 1px solid var(--soft-rule);
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+#site-footer a {
+  color: var(--link);
+}
+
+/* Only switch to a mobile menu on truly narrow screens. */
+@media (max-width: 650px) {
+  html {
+    scrollbar-gutter: auto;
+  }
+
+  #tlayout {
+    display: block;
+  }
+
+  #layout-menu {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    min-height: 0;
+    padding: 10px 16px 12px;
+    border-right: 0;
+    border-bottom: 1px solid var(--menu-border);
+    white-space: normal;
+  }
+
+  .menu-category,
+  .menu-item {
+    display: inline-block;
+  }
+
+  .menu-category {
+    margin: 6px 10px 1px 0;
+    padding: 0;
+    border-bottom: 0;
+  }
+
+  .menu-item {
+    padding: 1px 10px 1px 0;
+  }
+
+  #layout-content {
+    width: 100%;
+    max-width: none;
+    min-height: 100vh;
+    padding: 15px 16px 16px;
+  }
+}
+
+@media (max-width: 520px) {
+  table.imgtable td:first-child {
+    width: 125px !important;
+    min-width: 125px !important;
+    max-width: 125px !important;
+  }
+
+  table.imgtable td:first-child img {
+    width: 125px !important;
+    height: 125px !important;
+  }
+
+  table.imgtable td:first-child + td {
+    padding-left: 8px !important;
+  }
+}

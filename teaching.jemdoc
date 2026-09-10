@@ -1,4 +1,4 @@
-# jemdoc: menu{MENU}{teaching.html}, nofooter
+# jemdoc: menu{MENU}{teaching.html}, nodefaultcss, addcss{site.css}, nofooter
 = Teaching
 
 The EE department courses offered are listed [https://engineering.ku.edu.kw/ee/undergraduates/courses?standing=0 here].

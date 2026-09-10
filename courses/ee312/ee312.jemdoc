@@ -1,6 +1,5 @@
-# jemdoc:  nofooter
+# jemdoc: menu{MENU}{ee312.html}{../../}, nodefaultcss, addcss{../../site.css}, nofooter
 = EE312: Signals and Systems 
-[../../index.html Main page]
 
 
 == Lecture slides (Fall 2024)

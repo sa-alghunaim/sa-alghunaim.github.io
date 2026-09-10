@@ -1,0 +1,343 @@
+/*
+ * jemdoc-cvx stylesheet for Sulaiman A. Alghunaim
+ * Clean, uniform version: one rule set, no accumulated overrides.
+ */
+
+:root {
+  --page-bg: #ffffff;
+  --menu-bg: #eceff1;
+  --menu-border: #d2d7db;
+  --text: #000000;
+  --muted: #626d74;
+  --heading: #0047AB;
+  --link: #0e00cc;
+  --link-hover: #0047AB;
+  --rule: #b5c6d1;
+  --soft-rule: #dce3e7;
+  --block-bg: #f6f8f9;
+  --code-bg: #f3f5f6;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  background: var(--page-bg);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 8px;
+  background: var(--page-bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+/* Main two-column layout */
+#tlayout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  align-items: stretch;
+  background: var(--page-bg);
+}
+
+/* Left menu -- fixed typography on every page */
+#layout-menu {
+  position: sticky;
+  top: 0;
+  min-height: 100vh;
+  padding: 0.8rem 12px 1.5rem;
+  background: var(--menu-bg);
+  border-right: 1px solid var(--menu-border);
+  color: #343b40;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 17px !important;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+#layout-menu .menu-category,
+#layout-menu .menu-item,
+#layout-menu a {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 17px !important;
+}
+
+.menu-category {
+  margin-top: 0.85rem;
+  padding: 0.18rem 0.4rem 0.14rem;
+  color: #343b40;
+  font-weight: 700;
+  border-bottom: 1px solid #c7cdd1;
+}
+
+.menu-category:first-child { margin-top: 0.1rem; }
+.menu-item { padding: 0.10rem 0.42rem; }
+
+.menu-item a {
+  display: block;
+  color: var(--link);
+  line-height: 1.45;
+  text-decoration: none;
+}
+
+.menu-item a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.menu-item a.current {
+  color: var(--link);
+  font-weight: 400;
+  border-bottom: 1px solid #777777;
+}
+
+/* Main content -- fixed 16 px typography on every page */
+#layout-content {
+  width: min(100%, 1100px);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1.05rem 1.8rem 1rem;
+  background: var(--page-bg);
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.3;
+}
+
+#layout-content p,
+#layout-content li,
+#layout-content dt,
+#layout-content dd,
+#layout-content blockquote,
+#layout-content table,
+#layout-content td,
+#layout-content th {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+#layout-content a,
+#layout-content b,
+#layout-content strong,
+#layout-content i,
+#layout-content em {
+  font-size: inherit;
+}
+
+#toptitle {
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.12rem;
+  border-bottom: 3px double var(--rule);
+}
+
+#toptitle + h2,
+#toptitle + h3 { margin-top: -0.35rem; }
+
+h1, h2, h3 {
+  color: var(--heading);
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 650;
+  line-height: 1.22;
+}
+
+h1 {
+  margin: 0.2rem 0 0.25rem;
+  padding: 0 0 0.25rem;
+  font-size: 29.6px;
+}
+
+h2 {
+  margin: 1.45rem 0 0.55rem;
+  padding-bottom: 0.14rem;
+  border-bottom: 1px solid var(--rule);
+  font-size: 20.8px;
+}
+
+h3 {
+  margin: 1.15rem 0 0.4rem;
+  font-size: 17.28px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.8em;
+  padding: 0;
+  line-height: 1.3;
+}
+
+a, a > code {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+/* Compact ordinary lists */
+ul, ol, dl {
+  margin-top: 0.08em;
+  padding-top: 0;
+  margin-bottom: 0.55em;
+}
+
+ul, ol { padding-left: 1.65rem; }
+ul { list-style-position: outside; list-style-type: square; }
+ol { list-style-position: outside; list-style-type: decimal; }
+ol ol { list-style-type: lower-alpha; }
+ol ol ol { list-style-type: lower-roman; }
+
+p + ul, p + ol { margin-top: -0.62em; }
+li { margin: 0; padding: 0; }
+li ul, li ol { margin-top: -0.42em; margin-bottom: 0.3em; }
+li p, dd p { margin-top: 0; margin-bottom: 0.06em; }
+
+/* Course/slide PDF lists need more breathing room than ordinary bullets. */
+#layout-content li > p:has(> a[href$=".pdf" i]) {
+  margin-bottom: 0.36em;
+}
+
+img { max-width: 100%; height: auto; border: 0; }
+img.eq { padding: 0 0.1em; }
+img.eqwl { padding-left: 2em; }
+
+/* Compact profile photo + affiliation block */
+table.imgtable {
+  display: table !important;
+  width: auto !important;
+  max-width: none !important;
+  table-layout: auto !important;
+  border: 0;
+  border-collapse: collapse;
+  margin: 0 0 1rem 0;
+}
+
+table.imgtable tbody { display: table-row-group !important; width: auto !important; }
+table.imgtable tr { display: table-row !important; width: auto !important; }
+table.imgtable td {
+  display: table-cell !important;
+  width: auto !important;
+  padding: 0 !important;
+  border: 0;
+  vertical-align: top;
+  text-align: left;
+}
+
+table.imgtable td:first-child {
+  width: 160px !important;
+  min-width: 160px !important;
+  max-width: 160px !important;
+  font-size: 0;
+}
+
+table.imgtable td:first-child + td {
+  width: auto !important;
+  padding-left: 10px !important;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+table.imgtable td:first-child + td p {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+table.imgtable img { display: block; margin: 0 !important; }
+
+/* Ordinary tables */
+table { border-collapse: collapse; margin: 0.75rem 0 1.1rem; }
+td, th {
+  padding: 0.28rem 0.5rem;
+  border: 1px solid var(--soft-rule);
+  text-align: left;
+}
+th { background: #f3f5f6; }
+
+/* Info/code blocks */
+.infoblock, .codeblock { margin: 0.95rem 0; }
+.infoblock .blockcontent {
+  padding: 0.62rem 0.8rem;
+  background: var(--block-bg);
+  border: 1px solid #d9e0e4;
+}
+.blocktitle { color: #343b40; font-weight: 700; margin-bottom: 0.2rem; }
+
+pre, code, tt { font-family: Consolas, "Courier New", monospace !important; }
+code { background: var(--code-bg); padding: 0.05em 0.25em; border-radius: 3px; }
+pre { overflow-x: auto; padding: 0.72rem; background: var(--code-bg); border: 1px solid var(--menu-border); }
+pre code { background: transparent; padding: 0; border-radius: 0; }
+
+/* Footer sits below whichever column is taller. */
+#site-footer {
+  margin-top: auto;
+  padding-top: 0.8rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid var(--soft-rule);
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 14.08px;
+  font-weight: 400;
+}
+#site-footer a { color: var(--link); text-decoration: none; }
+#site-footer a:hover { color: var(--link-hover); text-decoration: underline; }
+
+/* Responsive layout */
+@media (max-width: 760px) {
+  #tlayout { display: block; }
+
+  #layout-menu {
+    position: static;
+    min-height: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--menu-border);
+    white-space: normal;
+    padding: 0.6rem 1rem 0.72rem;
+  }
+
+  .menu-category {
+    display: inline-block;
+    margin: 0.4rem 0.65rem 0.08rem 0;
+    padding: 0;
+    border-bottom: 0;
+  }
+
+  .menu-item {
+    display: inline-block;
+    padding: 0.06rem 0.65rem 0.06rem 0;
+  }
+
+  #layout-content {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0.95rem 1rem 1rem;
+  }
+}
+
+@media (max-width: 520px) {
+  table.imgtable td:first-child {
+    width: 125px !important;
+    min-width: 125px !important;
+    max-width: 125px !important;
+  }
+  table.imgtable td:first-child img {
+    width: 125px !important;
+    height: 125px !important;
+  }
+  table.imgtable td:first-child + td { padding-left: 8px !important; }
+}
