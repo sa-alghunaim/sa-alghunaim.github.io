@@ -48,6 +48,7 @@ body {
 /* The page content can never change the desktop sidebar geometry. */
 #tlayout {
   display: block;
+  min-width: 980px;
   min-height: 100vh;
   width: 100%;
   /* Keep the sidebar colour running for the full document height,
@@ -365,45 +366,37 @@ pre code { background: transparent; padding: 0; }
 #site-footer a { color: var(--link); text-decoration: none; }
 #site-footer a:hover { color: var(--link-hover); text-decoration: underline; }
 
-/* Mobile: same always-visible left sidebar as desktop, just narrower
-   so the content column still gets most of the screen. */
-@media (max-width: 760px) {
-  html {
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-  }
 
+/*
+ * Mobile behavior intentionally follows Stephen Boyd's classic jemdoc site:
+ * keep the desktop two-column geometry instead of squeezing/reflowing it.
+ * With no width=device-width viewport meta tag, phone browsers render this
+ * desktop-width canvas and scale it to the screen.
+ */
+@media (max-width: 760px) {
+  /* Do not change sidebar or content widths/typography on phones. */
   #layout-menu {
-    width: 122px !important;
-    min-width: 122px !important;
-    max-width: 122px !important;
-    padding: 10px 5px 20px;
-    font-size: 13px !important;
-    white-space: nowrap;
+    width: var(--sidebar-width) !important;
+    min-width: var(--sidebar-width) !important;
+    max-width: var(--sidebar-width) !important;
+    padding: 12px 12px 24px;
+    font-size: 17px !important;
   }
 
   #layout-menu .menu-category,
   #layout-menu .menu-item,
   #layout-menu .menu-item a,
   #layout-menu a {
-    font-size: 13px !important;
-    white-space: nowrap !important;
-    overflow-wrap: normal !important;
-    word-break: normal !important;
-    hyphens: none !important;
+    font-size: 17px !important;
   }
 
-  .menu-item { padding: 2px 4px; }
-  .menu-category { padding: 3px 4px 2px; }
-
   #layout-content {
-    margin-left: 122px;
-    width: calc(100% - 122px);
-    max-width: none;
-    min-height: 100vh;
-    padding: 15px 6px 14px;
-    font-size: 15px !important;
-    line-height: 1.32 !important;
+    margin-left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
+    min-width: 790px;
+    padding: 17px 29px 16px;
+    font-size: 16px !important;
+    line-height: 1.3 !important;
   }
 
   #layout-content p,
@@ -414,87 +407,38 @@ pre code { background: transparent; padding: 0; }
   #layout-content table,
   #layout-content td,
   #layout-content th {
-    font-size: 15px !important;
-    line-height: 1.32 !important;
+    font-size: 16px !important;
+    line-height: 1.3 !important;
   }
 
-  #layout-content ul,
-  #layout-content ol {
-    padding-left: 1.1rem;
-  }
-
-  /* On phones, keep normal words intact instead of allowing links to split
-     at arbitrary character positions. */
-  #layout-content a {
-    overflow-wrap: normal;
-    word-break: normal;
-    hyphens: none;
-  }
-
-  #layout-content a[href^="mailto:"] {
-    overflow-wrap: anywhere;
-  }
-
-  /* Avoid awkward two-line headings on narrow phones without changing desktop. */
-  h1 {
-    font-size: clamp(22px, 6.5vw, 26px);
-  }
-
-  h2 {
-    font-size: 18.5px;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 520px) {
-  /* On a phone, stacking the profile block gives the affiliation text the full
-     screen width instead of squeezing it beside the photo. */
-  table.imgtable {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-
+  table.imgtable,
   table.imgtable tbody,
   table.imgtable tr {
-    display: block !important;
-    width: 100% !important;
+    display: table !important;
   }
 
+  table.imgtable tbody { display: table-row-group !important; }
+  table.imgtable tr { display: table-row !important; }
   table.imgtable td,
   table.imgtable td:first-child,
   table.imgtable td:first-child + td {
-    display: block !important;
+    display: table-cell !important;
   }
 
   table.imgtable td:first-child {
-    width: 125px !important;
-    min-width: 125px !important;
-    max-width: 125px !important;
+    width: 160px !important;
+    min-width: 160px !important;
+    max-width: 160px !important;
   }
 
   table.imgtable td:first-child img {
-    width: 125px !important;
-    height: 125px !important;
+    width: 160px !important;
+    height: 160px !important;
   }
 
   table.imgtable td:first-child + td {
-    width: 100% !important;
-    padding-left: 0 !important;
-    padding-top: 9px !important;
-    font-size: 15px !important;
-    line-height: 1.32 !important;
-  }
-
-  table.imgtable td:first-child + td p {
-    font-size: 15px !important;
-    line-height: 1.32 !important;
-  }
-
-  table.imgtable td:first-child + td p {
-    margin-bottom: 0 !important;
+    width: auto !important;
+    padding-left: 10px !important;
+    padding-top: 0 !important;
   }
 }
