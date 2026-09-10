@@ -50,6 +50,15 @@ body {
   display: block;
   min-height: 100vh;
   width: 100%;
+  /* Keep the sidebar colour running for the full document height,
+     including below the viewport on long pages. */
+  background: linear-gradient(
+    to right,
+    var(--menu-bg) 0,
+    var(--menu-bg) var(--sidebar-width),
+    var(--page-bg) var(--sidebar-width),
+    var(--page-bg) 100%
+  );
 }
 
 #layout-menu {
@@ -123,7 +132,7 @@ body {
 #layout-content {
   margin-left: var(--sidebar-width);
   width: calc(100% - var(--sidebar-width));
-  max-width: 1100px;
+  max-width: 1280px;
   min-width: 0;
   min-height: 100vh;
   display: flex;
@@ -432,13 +441,36 @@ pre code { background: transparent; padding: 0; }
     transform: translateX(0);
   }
 
-  /* Content keeps the full screen width; the menu overlays on top of it. */
+  /* Content uses essentially the entire phone width; the menu overlays it. */
+  #tlayout {
+    background: var(--page-bg);
+  }
+
   #layout-content {
     margin-left: 0;
-    width: 100%;
-    max-width: none;
+    width: 100vw;
+    max-width: 100vw;
     min-height: 100vh;
-    padding: 60px 14px 16px;
+    padding: 58px 6px 14px;
+    font-size: 15px !important;
+    line-height: 1.32 !important;
+  }
+
+  #layout-content p,
+  #layout-content li,
+  #layout-content dt,
+  #layout-content dd,
+  #layout-content blockquote,
+  #layout-content table,
+  #layout-content td,
+  #layout-content th {
+    font-size: 15px !important;
+    line-height: 1.32 !important;
+  }
+
+  #layout-content ul,
+  #layout-content ol {
+    padding-left: 1.35rem;
   }
 
   /* On phones, keep normal words intact instead of allowing links to split
@@ -455,7 +487,15 @@ pre code { background: transparent; padding: 0; }
 
   /* Avoid awkward two-line headings on narrow phones without changing desktop. */
   h1 {
-    font-size: clamp(26px, 7.2vw, 29.6px);
+    font-size: clamp(25px, 6.8vw, 28.5px);
+  }
+
+  h2 {
+    font-size: 19.5px;
+  }
+
+  h3 {
+    font-size: 16.5px;
   }
 }
 
@@ -495,6 +535,13 @@ pre code { background: transparent; padding: 0; }
     width: 100% !important;
     padding-left: 0 !important;
     padding-top: 9px !important;
+    font-size: 15px !important;
+    line-height: 1.32 !important;
+  }
+
+  table.imgtable td:first-child + td p {
+    font-size: 15px !important;
+    line-height: 1.32 !important;
   }
 
   table.imgtable td:first-child + td p {
