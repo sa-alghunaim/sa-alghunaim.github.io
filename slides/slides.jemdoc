@@ -1,4 +1,4 @@
-# jemdoc: menu{MENU}{slides.html}{../}, nodefaultcss, addcss{../site.css}, nofooter
+# jemdoc: menu{MENU}{slides.html}{../}, nodefaultcss, addcss{../site.css}, addjs{../menu}, nofooter
 = Slides 
 
 == Talks 
