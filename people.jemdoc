@@ -1,4 +1,4 @@
-# jemdoc: menu{MENU}{people.html}, nodefaultcss, addcss{site.css}, addjs{menu}, nofooter
+# jemdoc: menu{MENU}{people.html}, nodefaultcss, addcss{site.css}, nofooter
 =People
 
 ~~~
