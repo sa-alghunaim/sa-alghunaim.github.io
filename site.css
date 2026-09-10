@@ -408,9 +408,9 @@ pre code { background: transparent; padding: 0; }
 
   #layout-menu {
     z-index: 100;
-    width: var(--sidebar-width) !important;
-    min-width: var(--sidebar-width) !important;
-    max-width: var(--sidebar-width) !important;
+    width: 240px !important;
+    min-width: 240px !important;
+    max-width: 240px !important;
     padding-top: 56px;
     white-space: nowrap;
     transform: translateX(-100%);
@@ -428,7 +428,7 @@ pre code { background: transparent; padding: 0; }
     width: 100%;
     max-width: none;
     min-height: 100vh;
-    padding: 60px 16px 16px;
+    padding: 60px 8px 16px;
   }
 }
 
