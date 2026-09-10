@@ -356,7 +356,7 @@ pre code { background: transparent; padding: 0; }
 #site-footer a { color: var(--link); text-decoration: none; }
 #site-footer a:hover { color: var(--link-hover); text-decoration: underline; }
 
-/* Mobile: sidebar becomes a normal top menu. */
+/* Mobile: keep the same left sidebar, just narrower. */
 @media (max-width: 760px) {
   html {
     -webkit-text-size-adjust: 100%;
@@ -364,36 +364,27 @@ pre code { background: transparent; padding: 0; }
   }
 
   #layout-menu {
-    position: static;
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: none !important;
-    height: auto;
-    overflow: visible;
-    padding: 10px 16px 12px;
-    border-right: 0;
-    border-bottom: 1px solid var(--menu-border);
+    width: 130px !important;
+    min-width: 130px !important;
+    max-width: 130px !important;
+    padding: 10px 8px 20px;
+    font-size: 15px !important;
     white-space: normal;
   }
 
-  .menu-category {
-    display: inline-block;
-    margin: 6px 10px 1px 0;
-    padding: 0;
-    border-bottom: 0;
-  }
-
-  .menu-item {
-    display: inline-block;
-    padding: 1px 10px 1px 0;
+  #layout-menu .menu-category,
+  #layout-menu .menu-item,
+  #layout-menu .menu-item a,
+  #layout-menu a {
+    font-size: 15px !important;
   }
 
   #layout-content {
-    margin-left: 0;
-    width: 100%;
+    margin-left: 130px;
+    width: calc(100% - 130px);
     max-width: none;
     min-height: 100vh;
-    padding: 15px 16px 16px;
+    padding: 15px 12px 16px;
   }
 }
 
