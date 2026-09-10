@@ -1,6 +1,9 @@
 /*
  * Personal jemdoc-cvx theme for Sulaiman A. Alghunaim
- * One fixed desktop sidebar and one typography scale on every page.
+ * Grid layout: the menu column auto-sizes to its content (so it
+ * never wraps), the content column takes the rest of the width.
+ * This is the same approach the reference jemdoc-cvx sites use —
+ * it needs no separate mobile mode or JS, it just reflows.
  */
 
 :root {
@@ -16,7 +19,6 @@
   --soft-rule: #dce3e7;
   --block-bg: #f6f8f9;
   --code-bg: #f3f5f6;
-  --sidebar-width: 190px;
 }
 
 * { box-sizing: border-box; }
@@ -45,24 +47,16 @@ body {
   line-height: 1.3;
 }
 
-/* The page content can never change the desktop sidebar geometry. */
 #tlayout {
-  display: block;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
   min-height: 100vh;
   width: 100%;
 }
 
 #layout-menu {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: var(--sidebar-width) !important;
-  min-width: var(--sidebar-width) !important;
-  max-width: var(--sidebar-width) !important;
-  overflow-y: auto;
-  overflow-x: hidden;
+  grid-column: 1;
   padding: 12px 12px 24px;
   background: var(--menu-bg);
   border-right: 1px solid var(--menu-border);
@@ -119,12 +113,11 @@ body {
   text-underline-offset: 3px;
 }
 
-/* Main text starts after the fixed sidebar and uses one fixed scale. */
+/* Main text sits in the remaining grid column and uses one fixed scale. */
 #layout-content {
-  margin-left: var(--sidebar-width);
-  width: calc(100% - var(--sidebar-width));
-  max-width: 1100px;
+  grid-column: 2;
   min-width: 0;
+  max-width: 1100px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -356,81 +349,23 @@ pre code { background: transparent; padding: 0; }
 #site-footer a { color: var(--link); text-decoration: none; }
 #site-footer a:hover { color: var(--link-hover); text-decoration: underline; }
 
-/* Desktop/tablet: no hamburger button, no backdrop. */
+/* No JS-driven mobile menu needed: the grid layout above (auto-width
+   menu column + flexible content column) reflows at any screen size
+   on its own, the same way the reference jemdoc-cvx sites do. The
+   toggle button/backdrop markup, if present in older cached HTML,
+   stays hidden. */
 #layout-menu-toggle,
 #layout-menu-backdrop {
-  display: none;
+  display: none !important;
 }
 
-/* Mobile: sidebar becomes an off-canvas overlay (hamburger toggle),
-   so the content column keeps its full desktop-like width and the
-   menu, when open, keeps the same one-line-per-item layout as desktop. */
 @media (max-width: 760px) {
   html {
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
   }
-
-  #layout-menu-toggle {
-    display: block;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 101;
-    width: 40px;
-    height: 40px;
-    border: 1px solid var(--menu-border);
-    border-radius: 4px;
-    background: var(--menu-bg);
-    color: #343b40;
-    font-size: 20px;
-    line-height: 38px;
-    padding: 0;
-    text-align: center;
-    cursor: pointer;
-  }
-
-  #layout-menu-backdrop {
-    display: block;
-    position: fixed;
-    inset: 0;
-    z-index: 99;
-    background: rgba(0, 0, 0, 0.35);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.2s ease;
-  }
-
-  #layout-menu-backdrop.open {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  #layout-menu {
-    z-index: 100;
-    width: 240px !important;
-    min-width: 240px !important;
-    max-width: 240px !important;
-    padding-top: 56px;
-    white-space: nowrap;
-    transform: translateX(-100%);
-    transition: transform 0.2s ease;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
-  }
-
-  #layout-menu.open {
-    transform: translateX(0);
-  }
-
-  /* Content keeps the full screen width; the menu overlays on top of it. */
-  #layout-content {
-    margin-left: 0;
-    width: 100%;
-    max-width: none;
-    min-height: 100vh;
-    padding: 60px 8px 16px;
-  }
 }
+
 
 @media (max-width: 520px) {
   table.imgtable td:first-child {

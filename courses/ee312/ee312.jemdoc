@@ -1,4 +1,4 @@
-# jemdoc: menu{MENU}{ee312.html}{../../}, nodefaultcss, addcss{../../site.css}, addjs{../../menu}, nofooter
+# jemdoc: menu{MENU}{ee312.html}{../../}, nodefaultcss, addcss{../../site.css}, nofooter
 = EE312: Signals and Systems 
 
 
