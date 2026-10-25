@@ -15,11 +15,11 @@
 
 -  H. Cai, *S. A. Alghunaim*, A. H. Sayed, ``[https://arxiv.org/abs/2507.21901 Communication-efficient algorithms for distributed nonconvex minimax optimization problems],'' arXiv:2507.21901, July, 2025. 
 
--  L. Guo, *S. A. Alghunaim*, K. Yuan, L. Condat, J. Cao, ``[https://arxiv.org/abs/2310.07983 Achieving linear speedup with ProxSkip in distributed stochastic optimization],'' arXiv:2310.07983, Oct., 2023. 
- 
-
 
 == Journals and Conferences
+-  \[*J*\]  L. Guo, *S. A. Alghunaim*, K. Yuan, L. Condat, J. Cao, ``[https://ieeexplore.ieee.org/document/11749634 Achieving linear speedup with ProxSkip in distributed stochastic optimization],'' /IEEE Trans. on Control of Network Systems/ (early access), 2026. [https://arxiv.org/abs/2310.07983 \[arXiv\]] 
+ 
+
 -  \[*J*\] H. Cai, *S. A. Alghunaim*, A. H. Sayed, ``[https://ieeexplore.ieee.org/document/11643524  Accelerated stochastic min-max optimization based on bias-corrected momentum],'' /IEEE Trans. Automatic Control/ (early access), 2026. [https://arxiv.org/abs/2406.13041 \[arXiv\]]
 
 - \[*C*\]  *S. A. Alghunaim*, ``[https://ieeexplore.ieee.org/abstract/document/11464979 Achieving linear speed-up for distributed inexact-ADMM],''  /Proc. IEEE ICASSP/, pp. 21686-21690, Barcelona, Spain, May 2026.
